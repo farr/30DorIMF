@@ -1,0 +1,663 @@
+ 5   0 lmc  f5-0.lmc.track.dat
+ 5   0 mw   f5-0.mw.track.dat
+ 5   0 smc  f5-0.smc.track.dat
+ 5 117 mw   f5-117.mw.track.dat
+ 5 119 lmc  f5-119.lmc.track.dat
+ 5 122 smc  f5-122.smc.track.dat
+ 5 175 mw   f5-175.mw.track.dat
+ 5 178 lmc  f5-178.lmc.track.dat
+ 5 183 smc  f5-183.smc.track.dat
+ 5 233 mw   f5-233.mw.track.dat
+ 5 237 lmc  f5-237.lmc.track.dat
+ 5 244 smc  f5-244.smc.track.dat
+ 5 291 mw   f5-291.mw.track.dat
+ 5 297 lmc  f5-297.lmc.track.dat
+ 5 306 smc  f5-306.smc.track.dat
+ 5 346 mw   f5-346.mw.track.dat
+ 5 355 lmc  f5-355.lmc.track.dat
+ 5 368 smc  f5-368.smc.track.dat
+ 5 397 mw   f5-397.mw.track.dat
+ 5 414 lmc  f5-414.lmc.track.dat
+ 5 430 smc  f5-430.smc.track.dat
+ 5 444 mw   f5-444.mw.track.dat
+ 5 468 lmc  f5-468.lmc.track.dat
+ 5 487 smc  f5-487.smc.track.dat
+ 5 491 mw   f5-491.mw.track.dat
+ 5 524 lmc  f5-524.lmc.track.dat
+ 5 537 mw   f5-537.mw.track.dat
+ 5 540 mw   f5-540.mw.track.dat
+ 5 543 smc  f5-543.smc.track.dat
+ 5 559 lmc  f5-559.lmc.track.dat
+ 5  58 mw   f5-58.mw.track.dat
+ 5 586 smc  f5-586.smc.track.dat
+ 5  59 lmc  f5-59.lmc.track.dat
+ 5  61 smc  f5-61.smc.track.dat
+ 6   0 lmc  f6-0.lmc.track.dat
+ 6   0 smc  f6-0.smc.track.dat
+ 6 118 lmc  f6-118.lmc.track.dat
+ 6 121 smc  f6-121.smc.track.dat
+ 6 177 lmc  f6-177.lmc.track.dat
+ 6 182 smc  f6-182.smc.track.dat
+ 6 236 lmc  f6-236.lmc.track.dat
+ 6 243 smc  f6-243.smc.track.dat
+ 6 294 lmc  f6-294.lmc.track.dat
+ 6 304 smc  f6-304.smc.track.dat
+ 6 353 lmc  f6-353.lmc.track.dat
+ 6 364 smc  f6-364.smc.track.dat
+ 6 410 lmc  f6-410.lmc.track.dat
+ 6 426 smc  f6-426.smc.track.dat
+ 6 465 lmc  f6-465.lmc.track.dat
+ 6 484 smc  f6-484.smc.track.dat
+ 6 520 lmc  f6-520.lmc.track.dat
+ 6 541 smc  f6-541.smc.track.dat
+ 6 572 lmc  f6-572.lmc.track.dat
+ 6  59 lmc  f6-59.lmc.track.dat
+ 6 594 smc  f6-594.smc.track.dat
+ 6  60 smc  f6-60.smc.track.dat
+ 7   0 lmc  f7-0.lmc.track.dat
+ 7   0 mw   f7-0.mw.track.dat
+ 7   0 smc  f7-0.smc.track.dat
+ 7 115 mw   f7-115.mw.track.dat
+ 7 117 lmc  f7-117.lmc.track.dat
+ 7 121 smc  f7-121.smc.track.dat
+ 7 173 mw   f7-173.mw.track.dat
+ 7 176 lmc  f7-176.lmc.track.dat
+ 7 181 smc  f7-181.smc.track.dat
+ 7 229 mw   f7-229.mw.track.dat
+ 7 235 lmc  f7-235.lmc.track.dat
+ 7 242 smc  f7-242.smc.track.dat
+ 7 284 mw   f7-284.mw.track.dat
+ 7 293 lmc  f7-293.lmc.track.dat
+ 7 303 smc  f7-303.smc.track.dat
+ 7 339 mw   f7-339.mw.track.dat
+ 7 363 smc  f7-363.smc.track.dat
+ 7 390 mw   f7-390.mw.track.dat
+ 7 404 lmc  f7-404.lmc.track.dat
+ 7 423 smc  f7-423.smc.track.dat
+ 7 445 mw   f7-445.mw.track.dat
+ 7 463 lmc  f7-463.lmc.track.dat
+ 7 481 smc  f7-481.smc.track.dat
+ 7 491 mw   f7-491.mw.track.dat
+ 7 517 lmc  f7-517.lmc.track.dat
+ 7 540 smc  f7-540.smc.track.dat
+ 7 552 mw   f7-552.mw.track.dat
+ 7  57 mw   f7-57.mw.track.dat
+ 7 573 lmc  f7-573.lmc.track.dat
+ 7  59 lmc  f7-59.lmc.track.dat
+ 7 595 smc  f7-595.smc.track.dat
+ 7  60 smc  f7-60.smc.track.dat
+ 8   0 lmc  f8-0.lmc.track.dat
+ 8   0 smc  f8-0.smc.track.dat
+ 8 117 lmc  f8-117.lmc.track.dat
+ 8 120 smc  f8-120.smc.track.dat
+ 8 175 lmc  f8-175.lmc.track.dat
+ 8 181 smc  f8-181.smc.track.dat
+ 8 234 lmc  f8-234.lmc.track.dat
+ 8 241 smc  f8-241.smc.track.dat
+ 8 291 lmc  f8-291.lmc.track.dat
+ 8 301 smc  f8-301.smc.track.dat
+ 8 347 lmc  f8-347.lmc.track.dat
+ 8 362 smc  f8-362.smc.track.dat
+ 8 403 lmc  f8-403.lmc.track.dat
+ 8 423 smc  f8-423.smc.track.dat
+ 8 460 lmc  f8-460.lmc.track.dat
+ 8 480 smc  f8-480.smc.track.dat
+ 8 515 lmc  f8-515.lmc.track.dat
+ 8 538 smc  f8-538.smc.track.dat
+ 8 571 lmc  f8-571.lmc.track.dat
+ 8  58 lmc  f8-58.lmc.track.dat
+ 8 594 smc  f8-594.smc.track.dat
+ 8  60 smc  f8-60.smc.track.dat
+ 9   0 lmc  f9-0.lmc.track.dat
+ 9   0 mw   f9-0.mw.track.dat
+ 9   0 smc  f9-0.smc.track.dat
+ 9 114 mw   f9-114.mw.track.dat
+ 9 116 lmc  f9-116.lmc.track.dat
+ 9 120 smc  f9-120.smc.track.dat
+ 9 171 mw   f9-171.mw.track.dat
+ 9 174 lmc  f9-174.lmc.track.dat
+ 9 180 smc  f9-180.smc.track.dat
+ 9 226 mw   f9-226.mw.track.dat
+ 9 232 lmc  f9-232.lmc.track.dat
+ 9 240 smc  f9-240.smc.track.dat
+ 9 281 mw   f9-281.mw.track.dat
+ 9 291 lmc  f9-291.lmc.track.dat
+ 9 301 smc  f9-301.smc.track.dat
+ 9 333 mw   f9-333.mw.track.dat
+ 9 347 lmc  f9-347.lmc.track.dat
+ 9 361 smc  f9-361.smc.track.dat
+ 9 388 mw   f9-388.mw.track.dat
+ 9 402 lmc  f9-402.lmc.track.dat
+ 9 420 smc  f9-420.smc.track.dat
+ 9 435 lmc  f9-435.lmc.track.dat
+ 9 441 mw   f9-441.mw.track.dat
+ 9 478 smc  f9-478.smc.track.dat
+ 9 481 lmc  f9-481.lmc.track.dat
+ 9 495 mw   f9-495.mw.track.dat
+ 9 514 lmc  f9-514.lmc.track.dat
+ 9 536 smc  f9-536.smc.track.dat
+ 9 548 mw   f9-548.mw.track.dat
+ 9 569 lmc  f9-569.lmc.track.dat
+ 9  57 mw   f9-57.mw.track.dat
+ 9  58 lmc  f9-58.lmc.track.dat
+ 9 593 smc  f9-593.smc.track.dat
+ 9  60 smc  f9-60.smc.track.dat
+10   0 lmc  f10-0.lmc.track.dat
+10   0 mw   f10-0.mw.track.dat
+10 113 mw   f10-113.mw.track.dat
+10 116 lmc  f10-116.lmc.track.dat
+10 170 mw   f10-170.mw.track.dat
+10 174 lmc  f10-174.lmc.track.dat
+10 226 mw   f10-226.mw.track.dat
+10 232 lmc  f10-232.lmc.track.dat
+10 281 mw   f10-281.mw.track.dat
+10 289 lmc  f10-289.lmc.track.dat
+10 333 mw   f10-333.mw.track.dat
+10 345 lmc  f10-345.lmc.track.dat
+10 386 mw   f10-386.mw.track.dat
+10 399 lmc  f10-399.lmc.track.dat
+10 439 mw   f10-439.mw.track.dat
+10 457 lmc  f10-457.lmc.track.dat
+10 493 mw   f10-493.mw.track.dat
+10 513 lmc  f10-513.lmc.track.dat
+10 547 mw   f10-547.mw.track.dat
+10 568 lmc  f10-568.lmc.track.dat
+10  57 mw   f10-57.mw.track.dat
+10  58 lmc  f10-58.lmc.track.dat
+12   0 lmc  f12-0.lmc.track.dat
+12   0 mw   f12-0.mw.track.dat
+12   0 smc  f12-0.smc.track.dat
+12 113 mw   f12-113.mw.track.dat
+12 115 lmc  f12-115.lmc.track.dat
+12 119 smc  f12-119.smc.track.dat
+12 149 smc  f12-149.smc.track.dat
+12 169 mw   f12-169.mw.track.dat
+12 173 lmc  f12-173.lmc.track.dat
+12 179 smc  f12-179.smc.track.dat
+12 225 mw   f12-225.mw.track.dat
+12 230 lmc  f12-230.lmc.track.dat
+12 239 smc  f12-239.smc.track.dat
+12 279 mw   f12-279.mw.track.dat
+12 287 lmc  f12-287.lmc.track.dat
+12 298 smc  f12-298.smc.track.dat
+12 331 mw   f12-331.mw.track.dat
+12 342 lmc  f12-342.lmc.track.dat
+12 356 smc  f12-356.smc.track.dat
+12 383 mw   f12-383.mw.track.dat
+12 397 lmc  f12-397.lmc.track.dat
+12 414 smc  f12-414.smc.track.dat
+12 436 mw   f12-436.mw.track.dat
+12 453 lmc  f12-453.lmc.track.dat
+12 474 smc  f12-474.smc.track.dat
+12 493 mw   f12-493.mw.track.dat
+12 510 lmc  f12-510.lmc.track.dat
+12 532 smc  f12-532.smc.track.dat
+12 547 mw   f12-547.mw.track.dat
+12  56 mw   f12-56.mw.track.dat
+12 566 lmc  f12-566.lmc.track.dat
+12  58 lmc  f12-58.lmc.track.dat
+12 590 smc  f12-590.smc.track.dat
+12  60 smc  f12-60.smc.track.dat
+13   0 lmc  f13-0.lmc.track.dat
+13   0 smc  f13-0.smc.track.dat
+13 115 lmc  f13-115.lmc.track.dat
+13 119 smc  f13-119.smc.track.dat
+13 143 lmc  f13-143.lmc.track.dat
+13 149 smc  f13-149.smc.track.dat
+13 156 lmc  f13-156.lmc.track.dat
+13 178 smc  f13-178.smc.track.dat
+13 213 lmc  f13-213.lmc.track.dat
+13 238 smc  f13-238.smc.track.dat
+13 269 lmc  f13-269.lmc.track.dat
+13 296 smc  f13-296.smc.track.dat
+13 325 lmc  f13-325.lmc.track.dat
+13 355 smc  f13-355.smc.track.dat
+13 379 lmc  f13-379.lmc.track.dat
+13  40 lmc  f13-40.lmc.track.dat
+13 413 smc  f13-413.smc.track.dat
+13 471 smc  f13-471.smc.track.dat
+13 510 lmc  f13-510.lmc.track.dat
+13 531 smc  f13-531.smc.track.dat
+13 565 lmc  f13-565.lmc.track.dat
+13  58 lmc  f13-58.lmc.track.dat
+13 589 smc  f13-589.smc.track.dat
+13  60 smc  f13-60.smc.track.dat
+13  98 lmc  f13-98.lmc.track.dat
+15   0 lmc  f15-0.lmc.track.dat
+15   0 mw   f15-0.mw.track.dat
+15   0 smc  f15-0.smc.track.dat
+15 112 mw   f15-112.mw.track.dat
+15 115 lmc  f15-115.lmc.track.dat
+15 119 smc  f15-119.smc.track.dat
+15 168 mw   f15-168.mw.track.dat
+15 172 lmc  f15-172.lmc.track.dat
+15 178 smc  f15-178.smc.track.dat
+15 223 mw   f15-223.mw.track.dat
+15 229 lmc  f15-229.lmc.track.dat
+15 237 smc  f15-237.smc.track.dat
+15 277 mw   f15-277.mw.track.dat
+15 285 lmc  f15-285.lmc.track.dat
+15 295 smc  f15-295.smc.track.dat
+15 329 mw   f15-329.mw.track.dat
+15 340 lmc  f15-340.lmc.track.dat
+15 353 smc  f15-353.smc.track.dat
+15 379 mw   f15-379.mw.track.dat
+15 394 lmc  f15-394.lmc.track.dat
+15 411 smc  f15-411.smc.track.dat
+15 431 mw   f15-431.mw.track.dat
+15 448 lmc  f15-448.lmc.track.dat
+15 469 smc  f15-469.smc.track.dat
+15 484 mw   f15-484.mw.track.dat
+15 505 lmc  f15-505.lmc.track.dat
+15 530 smc  f15-530.smc.track.dat
+15 542 mw   f15-542.mw.track.dat
+15  56 mw   f15-56.mw.track.dat
+15 563 lmc  f15-563.lmc.track.dat
+15  57 lmc  f15-57.lmc.track.dat
+15 588 smc  f15-588.smc.track.dat
+15  59 smc  f15-59.smc.track.dat
+15 595 mw   f15-595.mw.track.dat
+16   0 lmc  f16-0.lmc.track.dat
+16   0 smc  f16-0.smc.track.dat
+16 114 lmc  f16-114.lmc.track.dat
+16 118 smc  f16-118.smc.track.dat
+16 142 lmc  f16-142.lmc.track.dat
+16 154 lmc  f16-154.lmc.track.dat
+16 178 smc  f16-178.smc.track.dat
+16 211 lmc  f16-211.lmc.track.dat
+16 236 smc  f16-236.smc.track.dat
+16 267 lmc  f16-267.lmc.track.dat
+16 295 smc  f16-295.smc.track.dat
+16 323 lmc  f16-323.lmc.track.dat
+16 353 smc  f16-353.smc.track.dat
+16 377 lmc  f16-377.lmc.track.dat
+16  40 lmc  f16-40.lmc.track.dat
+16 410 smc  f16-410.smc.track.dat
+16 447 lmc  f16-447.lmc.track.dat
+16 468 smc  f16-468.smc.track.dat
+16 503 lmc  f16-503.lmc.track.dat
+16 528 smc  f16-528.smc.track.dat
+16 540 smc  f16-540.smc.track.dat
+16 562 lmc  f16-562.lmc.track.dat
+16 564 smc  f16-564.smc.track.dat
+16  57 lmc  f16-57.lmc.track.dat
+16 576 smc  f16-576.smc.track.dat
+16 581 smc  f16-581.smc.track.dat
+16 587 smc  f16-587.smc.track.dat
+16  59 smc  f16-59.smc.track.dat
+16 598 smc  f16-598.smc.track.dat
+16  97 lmc  f16-97.lmc.track.dat
+17   0 smc  f17-0.smc.track.dat
+17 118 smc  f17-118.smc.track.dat
+17 177 smc  f17-177.smc.track.dat
+17 236 smc  f17-236.smc.track.dat
+17 294 smc  f17-294.smc.track.dat
+17 352 smc  f17-352.smc.track.dat
+17 409 smc  f17-409.smc.track.dat
+17 467 smc  f17-467.smc.track.dat
+17 502 smc  f17-502.smc.track.dat
+17 526 smc  f17-526.smc.track.dat
+17 533 smc  f17-533.smc.track.dat
+17 539 smc  f17-539.smc.track.dat
+17 545 smc  f17-545.smc.track.dat
+17 563 smc  f17-563.smc.track.dat
+17 586 smc  f17-586.smc.track.dat
+17  59 smc  f17-59.smc.track.dat
+19   0 lmc  f19-0.lmc.track.dat
+19 114 lmc  f19-114.lmc.track.dat
+19 141 lmc  f19-141.lmc.track.dat
+19 154 lmc  f19-154.lmc.track.dat
+19 210 lmc  f19-210.lmc.track.dat
+19 266 lmc  f19-266.lmc.track.dat
+19 321 lmc  f19-321.lmc.track.dat
+19 374 lmc  f19-374.lmc.track.dat
+19  40 lmc  f19-40.lmc.track.dat
+19 445 lmc  f19-445.lmc.track.dat
+19 499 lmc  f19-499.lmc.track.dat
+19 557 lmc  f19-557.lmc.track.dat
+19  57 lmc  f19-57.lmc.track.dat
+19  97 lmc  f19-97.lmc.track.dat
+20   0 lmc  f20-0.lmc.track.dat
+20   0 mw   f20-0.mw.track.dat
+20   0 smc  f20-0.smc.track.dat
+20 111 mw   f20-111.mw.track.dat
+20 114 lmc  f20-114.lmc.track.dat
+20 118 smc  f20-118.smc.track.dat
+20 166 mw   f20-166.mw.track.dat
+20 170 lmc  f20-170.lmc.track.dat
+20 177 smc  f20-177.smc.track.dat
+20 220 mw   f20-220.mw.track.dat
+20 226 lmc  f20-226.lmc.track.dat
+20 234 smc  f20-234.smc.track.dat
+20 274 mw   f20-274.mw.track.dat
+20 282 lmc  f20-282.lmc.track.dat
+20 292 smc  f20-292.smc.track.dat
+20 324 mw   f20-324.mw.track.dat
+20 336 lmc  f20-336.lmc.track.dat
+20 373 smc  f20-373.smc.track.dat
+20 376 mw   f20-376.mw.track.dat
+20 390 lmc  f20-390.lmc.track.dat
+20 395 smc  f20-395.smc.track.dat
+20 408 smc  f20-408.smc.track.dat
+20 426 mw   f20-426.mw.track.dat
+20 431 smc  f20-431.smc.track.dat
+20 444 lmc  f20-444.lmc.track.dat
+20 464 smc  f20-464.smc.track.dat
+20 475 mw   f20-475.mw.track.dat
+20 476 smc  f20-476.smc.track.dat
+20 488 smc  f20-488.smc.track.dat
+20 497 lmc  f20-497.lmc.track.dat
+20 499 smc  f20-499.smc.track.dat
+20 507 mw   f20-507.mw.track.dat
+20 508 lmc  f20-508.lmc.track.dat
+20 510 smc  f20-510.smc.track.dat
+20 519 lmc  f20-519.lmc.track.dat
+20 522 smc  f20-522.smc.track.dat
+20 531 lmc  f20-531.lmc.track.dat
+20 542 lmc  f20-542.lmc.track.dat
+20 552 mw   f20-552.mw.track.dat
+20 554 lmc  f20-554.lmc.track.dat
+20  56 mw   f20-56.mw.track.dat
+20  57 lmc  f20-57.lmc.track.dat
+20 585 smc  f20-585.smc.track.dat
+20 588 mw   f20-588.mw.track.dat
+20  59 smc  f20-59.smc.track.dat
+25   0 lmc  f25-0.lmc.track.dat
+25   0 mw   f25-0.mw.track.dat
+25   0 smc  f25-0.smc.track.dat
+25 110 mw   f25-110.mw.track.dat
+25 113 lmc  f25-113.lmc.track.dat
+25 117 smc  f25-117.smc.track.dat
+25 165 mw   f25-165.mw.track.dat
+25 169 lmc  f25-169.lmc.track.dat
+25 176 smc  f25-176.smc.track.dat
+25 219 mw   f25-219.mw.track.dat
+25 225 lmc  f25-225.lmc.track.dat
+25 234 smc  f25-234.smc.track.dat
+25 271 mw   f25-271.mw.track.dat
+25 280 lmc  f25-280.lmc.track.dat
+25 291 smc  f25-291.smc.track.dat
+25 322 mw   f25-322.mw.track.dat
+25 333 lmc  f25-333.lmc.track.dat
+25 348 smc  f25-348.smc.track.dat
+25 374 mw   f25-374.mw.track.dat
+25 387 lmc  f25-387.lmc.track.dat
+25 409 lmc  f25-409.lmc.track.dat
+25 423 mw   f25-423.mw.track.dat
+25 428 smc  f25-428.smc.track.dat
+25 442 lmc  f25-442.lmc.track.dat
+25 444 mw   f25-444.mw.track.dat
+25 462 lmc  f25-462.lmc.track.dat
+25 462 smc  f25-462.smc.track.dat
+25 464 mw   f25-464.mw.track.dat
+25 467 smc  f25-467.smc.track.dat
+25 473 lmc  f25-473.lmc.track.dat
+25 473 mw   f25-473.mw.track.dat
+25 473 smc  f25-473.smc.track.dat
+25 483 lmc  f25-483.lmc.track.dat
+25 485 smc  f25-485.smc.track.dat
+25 494 lmc  f25-494.lmc.track.dat
+25 496 smc  f25-496.smc.track.dat
+25 503 mw   f25-503.mw.track.dat
+25 518 smc  f25-518.smc.track.dat
+25 531 mw   f25-531.mw.track.dat
+25 548 lmc  f25-548.lmc.track.dat
+25  55 mw   f25-55.mw.track.dat
+25  56 lmc  f25-56.lmc.track.dat
+25 574 mw   f25-574.mw.track.dat
+25 576 smc  f25-576.smc.track.dat
+25  59 smc  f25-59.smc.track.dat
+30   0 lmc  f30-0.lmc.track.dat
+30   0 mw   f30-0.mw.track.dat
+30   0 smc  f30-0.smc.track.dat
+30 109 mw   f30-109.mw.track.dat
+30 113 lmc  f30-113.lmc.track.dat
+30 117 smc  f30-117.smc.track.dat
+30 164 mw   f30-164.mw.track.dat
+30 169 lmc  f30-169.lmc.track.dat
+30 175 smc  f30-175.smc.track.dat
+30 217 mw   f30-217.mw.track.dat
+30 222 lmc  f30-222.lmc.track.dat
+30 233 smc  f30-233.smc.track.dat
+30 269 mw   f30-269.mw.track.dat
+30 278 lmc  f30-278.lmc.track.dat
+30 290 smc  f30-290.smc.track.dat
+30 321 mw   f30-321.mw.track.dat
+30 332 lmc  f30-332.lmc.track.dat
+30 346 smc  f30-346.smc.track.dat
+30 370 smc  f30-370.smc.track.dat
+30 372 mw   f30-372.mw.track.dat
+30 386 lmc  f30-386.lmc.track.dat
+30 392 smc  f30-392.smc.track.dat
+30 403 smc  f30-403.smc.track.dat
+30 407 lmc  f30-407.lmc.track.dat
+30 415 smc  f30-415.smc.track.dat
+30 420 smc  f30-420.smc.track.dat
+30 421 mw   f30-421.mw.track.dat
+30 431 smc  f30-431.smc.track.dat
+30 437 smc  f30-437.smc.track.dat
+30 439 lmc  f30-439.lmc.track.dat
+30 459 smc  f30-459.smc.track.dat
+30 470 mw   f30-470.mw.track.dat
+30 479 mw   f30-479.mw.track.dat
+30 481 lmc  f30-481.lmc.track.dat
+30 491 lmc  f30-491.lmc.track.dat
+30 512 lmc  f30-512.lmc.track.dat
+30 516 smc  f30-516.smc.track.dat
+30 535 mw   f30-535.mw.track.dat
+30 543 lmc  f30-543.lmc.track.dat
+30  55 mw   f30-55.mw.track.dat
+30  56 lmc  f30-56.lmc.track.dat
+30 565 mw   f30-565.mw.track.dat
+30 572 smc  f30-572.smc.track.dat
+30  58 smc  f30-58.smc.track.dat
+35   0 lmc  f35-0.lmc.track.dat
+35   0 mw   f35-0.mw.track.dat
+35   0 smc  f35-0.smc.track.dat
+35 109 mw   f35-109.mw.track.dat
+35 112 lmc  f35-112.lmc.track.dat
+35 116 smc  f35-116.smc.track.dat
+35 163 mw   f35-163.mw.track.dat
+35 168 lmc  f35-168.lmc.track.dat
+35 174 smc  f35-174.smc.track.dat
+35 216 mw   f35-216.mw.track.dat
+35 223 lmc  f35-223.lmc.track.dat
+35 231 smc  f35-231.smc.track.dat
+35 267 mw   f35-267.mw.track.dat
+35 277 lmc  f35-277.lmc.track.dat
+35 288 smc  f35-288.smc.track.dat
+35 318 mw   f35-318.mw.track.dat
+35 329 lmc  f35-329.lmc.track.dat
+35 345 smc  f35-345.smc.track.dat
+35 362 lmc  f35-362.lmc.track.dat
+35 370 mw   f35-370.mw.track.dat
+35 384 lmc  f35-384.lmc.track.dat
+35 394 lmc  f35-394.lmc.track.dat
+35 401 smc  f35-401.smc.track.dat
+35 405 lmc  f35-405.lmc.track.dat
+35 413 smc  f35-413.smc.track.dat
+35 416 lmc  f35-416.lmc.track.dat
+35 419 mw   f35-419.mw.track.dat
+35 424 smc  f35-424.smc.track.dat
+35 427 lmc  f35-427.lmc.track.dat
+35 435 smc  f35-435.smc.track.dat
+35 437 lmc  f35-437.lmc.track.dat
+35 438 mw   f35-438.mw.track.dat
+35 448 lmc  f35-448.lmc.track.dat
+35 448 mw   f35-448.mw.track.dat
+35 457 mw   f35-457.mw.track.dat
+35 457 smc  f35-457.smc.track.dat
+35 458 lmc  f35-458.lmc.track.dat
+35 467 mw   f35-467.mw.track.dat
+35 469 lmc  f35-469.lmc.track.dat
+35 479 lmc  f35-479.lmc.track.dat
+35 490 lmc  f35-490.lmc.track.dat
+35 511 mw   f35-511.mw.track.dat
+35 514 smc  f35-514.smc.track.dat
+35 530 mw   f35-530.mw.track.dat
+35 540 lmc  f35-540.lmc.track.dat
+35  55 mw   f35-55.mw.track.dat
+35 559 mw   f35-559.mw.track.dat
+35  56 lmc  f35-56.lmc.track.dat
+35 569 smc  f35-569.smc.track.dat
+35  58 smc  f35-58.smc.track.dat
+39   0 lmc  f39-0.lmc.track.dat
+39 112 lmc  f39-112.lmc.track.dat
+39 167 lmc  f39-167.lmc.track.dat
+39 221 lmc  f39-221.lmc.track.dat
+39 276 lmc  f39-276.lmc.track.dat
+39 329 lmc  f39-329.lmc.track.dat
+39 361 lmc  f39-361.lmc.track.dat
+39 383 lmc  f39-383.lmc.track.dat
+39 393 lmc  f39-393.lmc.track.dat
+39 414 lmc  f39-414.lmc.track.dat
+39 436 lmc  f39-436.lmc.track.dat
+39 488 lmc  f39-488.lmc.track.dat
+39 538 lmc  f39-538.lmc.track.dat
+39  56 lmc  f39-56.lmc.track.dat
+40   0 lmc  f40-0.lmc.track.dat
+40   0 mw   f40-0.mw.track.dat
+40   0 smc  f40-0.smc.track.dat
+40 109 mw   f40-109.mw.track.dat
+40 112 lmc  f40-112.lmc.track.dat
+40 116 smc  f40-116.smc.track.dat
+40 161 mw   f40-161.mw.track.dat
+40 167 lmc  f40-167.lmc.track.dat
+40 174 smc  f40-174.smc.track.dat
+40 214 mw   f40-214.mw.track.dat
+40 222 lmc  f40-222.lmc.track.dat
+40 231 smc  f40-231.smc.track.dat
+40 265 mw   f40-265.mw.track.dat
+40 276 lmc  f40-276.lmc.track.dat
+40 288 smc  f40-288.smc.track.dat
+40 317 mw   f40-317.mw.track.dat
+40 329 lmc  f40-329.lmc.track.dat
+40 344 smc  f40-344.smc.track.dat
+40 367 mw   f40-367.mw.track.dat
+40 382 lmc  f40-382.lmc.track.dat
+40 389 smc  f40-389.smc.track.dat
+40 393 lmc  f40-393.lmc.track.dat
+40 403 lmc  f40-403.lmc.track.dat
+40 414 lmc  f40-414.lmc.track.dat
+40 417 mw   f40-417.mw.track.dat
+40 422 smc  f40-422.smc.track.dat
+40 425 lmc  f40-425.lmc.track.dat
+40 436 lmc  f40-436.lmc.track.dat
+40 456 smc  f40-456.smc.track.dat
+40 464 mw   f40-464.mw.track.dat
+40 467 lmc  f40-467.lmc.track.dat
+40 477 lmc  f40-477.lmc.track.dat
+40 488 lmc  f40-488.lmc.track.dat
+40 498 lmc  f40-498.lmc.track.dat
+40 508 lmc  f40-508.lmc.track.dat
+40 509 mw   f40-509.mw.track.dat
+40 512 smc  f40-512.smc.track.dat
+40 526 mw   f40-526.mw.track.dat
+40 538 lmc  f40-538.lmc.track.dat
+40  54 mw   f40-54.mw.track.dat
+40 554 mw   f40-554.mw.track.dat
+40  56 lmc  f40-56.lmc.track.dat
+40 567 smc  f40-567.smc.track.dat
+40  58 smc  f40-58.smc.track.dat
+45   0 lmc  f45-0.lmc.track.dat
+45 111 lmc  f45-111.lmc.track.dat
+45 167 lmc  f45-167.lmc.track.dat
+45 221 lmc  f45-221.lmc.track.dat
+45 275 lmc  f45-275.lmc.track.dat
+45 328 lmc  f45-328.lmc.track.dat
+45 349 lmc  f45-349.lmc.track.dat
+45 360 lmc  f45-360.lmc.track.dat
+45 382 lmc  f45-382.lmc.track.dat
+45 402 lmc  f45-402.lmc.track.dat
+45 434 lmc  f45-434.lmc.track.dat
+45 445 lmc  f45-445.lmc.track.dat
+45 456 lmc  f45-456.lmc.track.dat
+45 465 lmc  f45-465.lmc.track.dat
+45 478 lmc  f45-478.lmc.track.dat
+45 486 lmc  f45-486.lmc.track.dat
+45 506 lmc  f45-506.lmc.track.dat
+45 536 lmc  f45-536.lmc.track.dat
+45  56 lmc  f45-56.lmc.track.dat
+50   0 lmc  f50-0.lmc.track.dat
+50   0 mw   f50-0.mw.track.dat
+50   0 smc  f50-0.smc.track.dat
+50 108 mw   f50-108.mw.track.dat
+50 111 lmc  f50-111.lmc.track.dat
+50 116 smc  f50-116.smc.track.dat
+50 161 mw   f50-161.mw.track.dat
+50 166 lmc  f50-166.lmc.track.dat
+50 173 smc  f50-173.smc.track.dat
+50 213 mw   f50-213.mw.track.dat
+50 219 lmc  f50-219.lmc.track.dat
+50 230 smc  f50-230.smc.track.dat
+50 264 mw   f50-264.mw.track.dat
+50 274 lmc  f50-274.lmc.track.dat
+50 286 smc  f50-286.smc.track.dat
+50 314 mw   f50-314.mw.track.dat
+50 327 lmc  f50-327.lmc.track.dat
+50 343 smc  f50-343.smc.track.dat
+50 354 smc  f50-354.smc.track.dat
+50 364 mw   f50-364.mw.track.dat
+50 376 smc  f50-376.smc.track.dat
+50 380 lmc  f50-380.lmc.track.dat
+50 398 smc  f50-398.smc.track.dat
+50 401 lmc  f50-401.lmc.track.dat
+50 410 smc  f50-410.smc.track.dat
+50 413 mw   f50-413.mw.track.dat
+50 415 smc  f50-415.smc.track.dat
+50 421 smc  f50-421.smc.track.dat
+50 432 smc  f50-432.smc.track.dat
+50 433 lmc  f50-433.lmc.track.dat
+50 454 smc  f50-454.smc.track.dat
+50 459 mw   f50-459.mw.track.dat
+50 464 lmc  f50-464.lmc.track.dat
+50 484 lmc  f50-484.lmc.track.dat
+50 503 mw   f50-503.mw.track.dat
+50 505 lmc  f50-505.lmc.track.dat
+50 509 smc  f50-509.smc.track.dat
+50 519 mw   f50-519.mw.track.dat
+50 534 lmc  f50-534.lmc.track.dat
+50  54 mw   f50-54.mw.track.dat
+50 545 mw   f50-545.mw.track.dat
+50  56 lmc  f50-56.lmc.track.dat
+50 564 smc  f50-564.smc.track.dat
+50  58 smc  f50-58.smc.track.dat
+60   0 lmc  f60-0.lmc.track.dat
+60   0 mw   f60-0.mw.track.dat
+60   0 smc  f60-0.smc.track.dat
+60 107 mw   f60-107.mw.track.dat
+60 111 lmc  f60-111.lmc.track.dat
+60 115 smc  f60-115.smc.track.dat
+60 160 mw   f60-160.mw.track.dat
+60 166 lmc  f60-166.lmc.track.dat
+60 172 smc  f60-172.smc.track.dat
+60 212 mw   f60-212.mw.track.dat
+60 220 lmc  f60-220.lmc.track.dat
+60 229 smc  f60-229.smc.track.dat
+60 262 mw   f60-262.mw.track.dat
+60 273 lmc  f60-273.lmc.track.dat
+60 285 smc  f60-285.smc.track.dat
+60 312 mw   f60-312.mw.track.dat
+60 326 lmc  f60-326.lmc.track.dat
+60 342 smc  f60-342.smc.track.dat
+60 361 mw   f60-361.mw.track.dat
+60 364 smc  f60-364.smc.track.dat
+60 379 lmc  f60-379.lmc.track.dat
+60 386 smc  f60-386.smc.track.dat
+60 398 smc  f60-398.smc.track.dat
+60 401 lmc  f60-401.lmc.track.dat
+60 409 mw   f60-409.mw.track.dat
+60 420 smc  f60-420.smc.track.dat
+60 432 lmc  f60-432.lmc.track.dat
+60 453 smc  f60-453.smc.track.dat
+60 455 mw   f60-455.mw.track.dat
+60 462 lmc  f60-462.lmc.track.dat
+60 482 lmc  f60-482.lmc.track.dat
+60 497 mw   f60-497.mw.track.dat
+60 508 smc  f60-508.smc.track.dat
+60 532 lmc  f60-532.lmc.track.dat
+60 537 mw   f60-537.mw.track.dat
+60  54 mw   f60-54.mw.track.dat
+60  55 lmc  f60-55.lmc.track.dat
+60 562 smc  f60-562.smc.track.dat
+60  58 smc  f60-58.smc.track.dat
