@@ -42,9 +42,9 @@ data {
 
   int nobs;
   real Mobs[nobs];
-  real sigma_logM[nobs];
+  real sigma_M[nobs];
   real ageobs[nobs];
-  real sigma_logage[nobs];
+  real sigma_age[nobs];
 
   int nundet_max; /* Maximum permitted number of un-detected sources
 		     permitted. */
@@ -103,8 +103,8 @@ model {
 
   /* Observed systems */
   /* Likelihood terms */
-  Mobs ~ lognormal(log(Mtrue), sigma_logM);
-  ageobs ~ lognormal(log(agetrue), sigma_logage);
+  Mobs ~ normal(Mtrue, sigma_M);
+  ageobs ~ normal(agetrue, sigma_age);
   /* Hierarchical (Population) Prior */
   target += nobs*log(L);
   target += sum(log_dPdMdt(Mtrue, agetrue, alpha, mu_t, sigma_t, MMin, tmax));
