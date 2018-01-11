@@ -90,12 +90,14 @@ data {
   int nltc; /* Number of lifetime fit coefficients. */
   real ltc[nltc]; /* Fit coefficients for stellar lifetime versus mass. */
 
+  real nu; /* DOF for Student-T. */
+
   real MMin; /* Minimum mass considered. */
   real tmax; /* Largest age considered. */
 
   int nobs;
-  real Mobs[nobs];
-  real sigma_M[nobs];
+  real log_Mobs[nobs];
+  real sigma_logM[nobs];
   real ageobs[nobs];
   real sigma_age[nobs];
 }
@@ -172,8 +174,8 @@ model {
   
   /* Observed systems */
   /* Likelihood terms */
-  Mobs ~ normal(Mtrue, sigma_M);
-  ageobs ~ normal(agetrue, sigma_age);
+  log_Mobs ~ student_t(nu, log(Mtrue), sigma_logM);
+  ageobs ~ student_t(nu, agetrue, sigma_age);
   /* Hierarchical (Population) Prior */
   target += nobs*log(L);
   target += sum(log_dPdMdt(Mtrue, agetrue, alpha, mu_t, sigma_t, MMin, tmax));
