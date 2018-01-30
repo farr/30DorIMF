@@ -48,11 +48,28 @@ Schneider et al. (Reports, 5 January 2018, p.~69) found more massive stars in th
 
 \maketitle
 
-The universality of the initial mass function of stars is a hot topic in modern astrophysics, with impact on galactic evolution, supernovae, and gravitational-wave sources \cite{Kroupa:review,Bastian:2010}.    \citet{Schneider:2018} use spectroscopic observations of young massive stars in the 30 Doradus region of the Large Magellanic Cloud to infer a shallower-than-expected IMF.  Their conclusion is due to a faulty statistical methodology.  
+The universality of the initial mass function of stars is a hot topic in modern astrophysics, with impact on galactic evolution, supernovae, and gravitational-wave sources \cite{Kroupa:review,Bastian:2010}.    \citet{Schneider:2018} use spectroscopic observations of young massive stars in the 30 Doradus region of the Large Magellanic Cloud to infer a shallower-than-expected IMF.  Their conclusion is due to a faulty statistical methodology.
 
 \citet{Schneider:2018} obtain estimates of the ages and masses of individual stars with the BONNSAI Bayesian code \cite{Schneider:Bonn}.  They then obtain an overall mass distribution by effectively adding together the posterior probability density functions of individual stars.  There is no statistical meaning to a distribution obtained in this way, and it does not represent the posterior probability density function on the underlying mass distribution.  In fact, for a steeply decaying power law underlying distribution such as the one being considered here, the approach of \cite{Schneider:2018} will yield a distribution biased toward the high-mass end.  The measurement uncertainty will ``smear out'' the masses of both low-mass and high-mass stars, but because there are far more low-mass stars than high-mass ones, this appears to yield more mass at the high end of the distribution, leading to a false conclusion of a shallower distribution.
 
-Hierarchical Bayesian inference provides the statistically correct solution to this problem \cite{Hogg:2010}.  \citet{Mandel:2010stat} specifically considered inference on a mass distribution given a sample of uncertain measurements, and we use this methodology here.  We follow \citet{Schneider:2018} in assuming that their data set is complete above 15 solar masses.  We interpret their inference on individual masses and ages as log-normal likelihoods with parameters fixed by matching the peak and 68\% width of the individual stellar distributions to the \citet{Schneider:2018} data.  We model the star formation history as a Gaussian distribution.  We use the Hamiltonian Monte Carlo sampler STAN \cite{STAN} to efficiently address the high-dimensional hierarchical problem with free parameters for each star's actual mass and birth age in addition to the IMF slope and the mean and standard deviation of the star formation history.
+Hierarchical Bayesian inference provides the statistically correct solution to
+this problem \cite{Hogg:2010}.  \citet{Mandel:2010stat} specifically considered
+inference on a mass distribution given a sample of uncertain measurements, and
+we use this methodology here.  We follow \citet{Schneider:2018} in assuming that
+their data set is complete above 15 solar masses.  We interpret their inference
+on individual masses and ages as independent Student T distributions for the log
+of the mass and the age, with parameters fixed by matching the T location
+parameter to the peak and the T scale parameter to the 68\% width of the
+individual stellar distributions to the \citet{Schneider:2018} data.  We have
+verified that the inference is robust to the number of degrees of freedom
+assumed for the T distribution (see Figure \ref{fig:IMF}), suggesting that heavy
+tails in the likelihood do not have a strong effect on the inference. We model
+the star formation history as a truncated Gaussian distribution.  We impose
+broad priors on the power-law slope and the mean and standard deviation of the
+star formation Gaussian.    We use the Hamiltonian Monte Carlo sampler STAN
+\citep{STAN} to efficiently address the high-dimensional hierarchical problem
+with free parameters for each star's actual mass and birth age in addition to
+the IMF slope and the mean and standard deviation of the star formation history.
 
 Figure \ref{fig:IMF} shows the inferred power-law exponent of the IMF.  We find
 an exponent of $\alpharange$ where the quoted value corresponds to the peak of
@@ -65,9 +82,9 @@ predictive checking.
 
 \begin{figure}
 %\vspace{-1in}
-    		    		\includegraphics[trim={0cm 0cm 0cm 0cm},clip,scale=0.4]{alpha.pdf}
+    		    		\includegraphics[width=\columnwidth]{alpha.pdf}
 %\vspace{-1in}
-    		\caption{Blah}\label{fig:IMF}
+    		\caption{The posterior inferred on the power law slope assuming survey completness for $M \geq 15 \, \MSun$ with $\nu = 100$ degrees of freedom in the Student T likelihood functions (blue curve; see text) and $\nu = 4$ degrees of freedom (green curve), and assuming completeness only for $M \geq 20 \, \MSun$ with $\nu = 100$ (red curve).  The change in the posterior when assuming completeness only for $M \geq 20 \, \MSun$ is within the range expected from fits to synthetic data sets drawn from the $M \geq 15$, $\nu = 100$ model (i.e.\ posterior predictive distributions of data).  There is little difference between the blue and green curves, suggesting that the inference on the power law slope is insensitive to the heavy-tailed nature of the likelihood function.  In all cases the IMF slope is consistent with a Salpeter slope of $-2.35$ \citep{Salpeter:1955}. }\label{fig:IMF}
 \end{figure}
 
 We confirm the stability of our conclusions with posterior predictive checking.  Figure \ref{fig:PPC} shows the inferred mass distribution from the data on top of the range of mass distributions that would be inferred from a large number of data sets drawn according to our preferred IMF model.  The data can be seen to be consistent with our IMF model.
@@ -81,6 +98,12 @@ We confirm the stability of our conclusions with posterior predictive checking. 
 
 
 In conclusion, we find that there is no evidence for a deviation from the Salpeter IMF in the observations of young massive stars in 30 Doradus once correct statistical analysis is applied.
+
+\acknowledgments
+
+While this note is critical of the conclusions in \citet{Schneider:2018}, those
+authors should be commended for making the data on which their conclusions are
+based available for further study and analysis.  This analysis made use of the \texttt{PySTAN} \citep{PySTAN}, \texttt{astropy} \citep{XXX}, \texttt{numpy} \citep{XXX}, \texttt{scipy} \citep{XXX}, \texttt{matplotlib} \citep{XXX}, and \texttt{seaborn} \citep{XXX} Python libraries.
 
 \bibliographystyle{hapj}
 \bibliography{Mandel}
