@@ -72,28 +72,36 @@ with free parameters for each star's actual mass and birth age in addition to
 the IMF slope and the mean and standard deviation of the star formation history.
 
 Figure \ref{fig:IMF} shows the inferred power-law exponent of the IMF.  We find
-an exponent of $\alpharange$ where the quoted value corresponds to the peak of
-the posterior distribution and the range to the 17th and 83rd percentiles.  The
-conclusion is somewhat sensitive to the choice of the cutoff mass for survey
-completeness, with an exponent of $\alpharangeHM$ for a cutoff at $20 M_\odot$
-rather than $15 M_\odot$.  However, these fluctuations are within the expected
-statistical variation based on the sample size, as confirmed with posterior
-predictive checking.
+an exponent of $\alpharange$ where the quoted value corresponds to the median of
+the posterior distribution and the range to the 16th and 84th percentiles (i.e.\
+the symmetric 68\% credible interval).  The conclusion is somewhat sensitive to
+the choice of the cutoff mass for survey completeness, with an exponent of
+$\alpharangeHM$ for a cutoff at $20 M_\odot$ rather than $15 M_\odot$ (not
+shown).  However, these fluctuations are within the expected statistical
+variation based on the sample size, as confirmed with posterior predictive
+checking.  We see no reason to doubt the claim of \citet{Schneider:2018} that
+the survey is complete for $M \geq 15 \, \MSun$.
 
 \begin{figure}
 %\vspace{-1in}
     		    		\includegraphics[width=\columnwidth]{alpha.pdf}
 %\vspace{-1in}
-    		\caption{The posterior inferred on the power law slope assuming survey completness for $M \geq 15 \, \MSun$ with $\nu = 100$ degrees of freedom in the Student T likelihood functions (blue curve; see text) and $\nu = 4$ degrees of freedom (green curve), and assuming completeness only for $M \geq 20 \, \MSun$ with $\nu = 100$ (red curve).  The change in the posterior when assuming completeness only for $M \geq 20 \, \MSun$ is within the range expected from fits to synthetic data sets drawn from the $M \geq 15$, $\nu = 100$ model (i.e.\ posterior predictive distributions of data).  There is little difference between the blue and green curves, suggesting that the inference on the power law slope is insensitive to the heavy-tailed nature of the likelihood function.  In all cases the IMF slope is consistent with a Salpeter slope of $-2.35$ \citep{Salpeter:1955}. }\label{fig:IMF}
+    		\caption{The posterior inferred on the power law slope assuming survey completness for $M \geq 15 \, \MSun$ with $\nu = 100$ degrees of freedom in the Student T likelihood functions (blue curve; see text) and $\nu = 4$ degrees of freedom (green curve).  There is little difference between the blue and green curves, suggesting that the inference on the power law slope is insensitive to the heavy-tailed nature of the likelihood function.  In all cases the IMF slope we infer is consistent with a Salpeter slope of $-2.35$ \citep{Salpeter:1955}. }\label{fig:IMF}
 \end{figure}
 
-We confirm the stability of our conclusions with posterior predictive checking.  Figure \ref{fig:PPC} shows the inferred mass distribution from the data on top of the range of mass distributions that would be inferred from a large number of data sets drawn according to our preferred IMF model.  The data can be seen to be consistent with our IMF model.
+We confirm the stability of our conclusions with posterior predictive checking.
+Figure \ref{fig:PPC} shows the distribution of observed masses and ages (i.e.\
+the peak of the likelihood) from the \citet{Schneider:2018} data on top of the
+range of mass and age distributions that would be observed from a large number
+of data sets drawn according to our fitted IMF model.  The data can be seen to
+be consistent with our IMF model.
 
 \begin{figure}
 %\vspace{-1in}
-    		    		\includegraphics[trim={0cm 0cm 0cm 0cm},clip,scale=0.4]{dNdm-ppc-band.pdf}
+    		    		\includegraphics[width=\columnwidth]{dNdm-ppc-band.pdf}\\
+                \includegraphics[width=\columnwidth]{dNdt-ppc-band.pdf}
 %\vspace{-1in}
-    		\caption{Blah}\label{fig:PPC}
+    		\caption{The observed distribution of (maximum likelihood) masses (top, black) and ages (bottom, black) and the range (median, 68\%, and 95\% credible intervals in blue) of distributions of mass and age from synthetic data drawn from our fitted model (i.e.\ the posterior predictive distribution).  We see no evidence that our model is unable to account for the features in the observed data, including the apparent shallowing of the slope of the mass distribution for $M \gtrsim 60 \, \MSun$.}\label{fig:PPC}
 \end{figure}
 
 
@@ -103,7 +111,7 @@ In conclusion, we find that there is no evidence for a deviation from the Salpet
 
 While this note is critical of the conclusions in \citet{Schneider:2018}, those
 authors should be commended for making the data on which their conclusions are
-based available for further study and analysis.  This analysis made use of the \texttt{PySTAN} \citep{PySTAN}, \texttt{astropy} \citep{XXX}, \texttt{numpy} \citep{XXX}, \texttt{scipy} \citep{XXX}, \texttt{matplotlib} \citep{XXX}, and \texttt{seaborn} \citep{XXX} Python libraries.
+based available for further study and analysis.  This analysis made use of the \texttt{PySTAN} \citep{PySTAN}, \texttt{astropy} \citep{astropy}, \texttt{numpy} \citep{numpy}, \texttt{scipy} \citep{scipy}, \texttt{matplotlib} \citep{matplotlib}, and \texttt{seaborn} \citep{seaborn} Python libraries.
 
 \bibliographystyle{hapj}
 \bibliography{Mandel}
