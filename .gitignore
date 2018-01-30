@@ -1,2 +1,12 @@
 .ipynb_checkpoints/
 *~
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+30DorIMFtechnicalcomment.pdf
+*.synctex.gz
+*Notes.bib
