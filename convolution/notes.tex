@@ -1,0 +1,115 @@
+\documentclass[modern]{aastex62}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcommand{\dd}{\ensuremath{\mathrm{d}}}
+\newcommand{\diff}[2]{\ensuremath{\frac{\dd #1}{\dd #2}}}
+
+\newcommand{\order}[1]{\ensuremath{\mathcal{O} \left(#1 \right)}}
+
+\newcommand{\aeff}{\ensuremath{\alpha_\mathrm{eff}}}
+\newcommand{\xobs}{\ensuremath{x_\mathrm{obs}}}
+
+\begin{document}
+
+\title{Power Laws With Observational Uncertainty: A Note on Convolutions}
+\author[0000-0003-1540-8562]{Will M. Farr}
+\email{w.farr@bham.ac.uk}
+\affil{Birmingham Institute of Gravitational Wave Astronomy\\School of Physics and Astronomy\\University of Birmingham\\Birmingham\\B15 2TT\\United Kingdom}
+
+\begin{abstract}
+%
+I derive some approximations for the \emph{observed} slope of a power-law
+population as a function of the observational uncertainty.
+%
+\end{abstract}
+
+\section*{} % To get the title to print properly
+
+It is common to attempt to fit populations in astronomy using a power-law
+distribution:
+%
+\begin{equation}
+  \diff{N}{x} \propto x^{-\alpha};
+\end{equation}
+%
+here $x$ is some population parameter (mass, luminosity, radius, period,
+\ldots), and we are ignoring issues of normalisation (the power law \emph{must}
+be truncated at some small or large $x$---or both---in order that the total
+number of objects is finite).  It is tempting \emph{but not
+correct\footnote{Unless the observations are perfect, with no uncertainty!}} to
+attempt to determine the exponent $\alpha$ by fitting the distribution of the
+\emph{observed} population to a power law\footnote{While we treat the case of
+point estimators for the quantity $x$ in this document, the same issues occur
+with the more sophisticated---but just as wrong---pseudo-Bayesian method of
+fitting the \emph{sum} of the posteriors for $x$ as if it were the population
+distribution.  See \citet{Hogg2010} or \citet{Mandel2010}.}.
+
+To be a bit more concrete, suppose we observe the quantity $x$ in each object
+under consideration through a process that produces an unbiased, Gaussian
+likelihood function for the observed quantity $\xobs$ in terms of the true
+parameter $x$:
+%
+\begin{equation}
+  p\left( \xobs \mid x \right) = N\left[ x, \sigma \right]\left( \xobs \right),
+\end{equation}
+%
+where $\sigma$ is the observational uncertainty.  In this case the distribution
+of observed parameters, $\dd N / \dd \xobs$, is not a power law at all
+(conceptually, we have introduced a new scale in the problem---$\sigma$---so the
+distribution cannot be scale free any more).  Let us assume that $\sigma \ll x$
+(power laws are scale-free, so $x$ is the only scale in the problem) and that
+$\sigma$ is either constant or slowly varying, changing significantly only on
+scales comparable to $x$.  Then the observed distribution is
+%
+\begin{equation}
+  \diff{N}{\xobs} \simeq \xobs^{-\alpha}  \left( 1 + \frac{1}{2} \alpha \left( \alpha + 1 \right) \frac{\sigma^2}{\xobs^2} + \order{\frac{\sigma}{\xobs}}^4 \right).
+\end{equation}
+%
+Proof:
+%
+\begin{eqnarray}
+  \diff{N}{\xobs} & = & \int \dd x \, p\left( \xobs \mid x \right) \diff{N}{x} \\
+  & = & \int \dd x \, N\left[ x, \sigma \right]\left( \xobs \right) \left[ \diff{N}{\xobs} + \frac{\dd^2 N}{\dd \xobs^2} \left( x - \xobs \right) + \frac{1}{2} \frac{\dd^3 N}{\dd \xobs^3} \left( x - \xobs\right)^2 + \ldots \right] \\
+  & = & \xobs^{-\alpha}\left(1 + \frac{1}{2} \alpha \left( \alpha + 1 \right) \frac{\sigma^2}{\xobs^2} + \ldots \right).
+\end{eqnarray}
+%
+Going from the second to the third line we have used the fact that odd moments
+of a Gaussian vanish and that the second moment is $\sigma^2$.  A power law
+distribution for the observed parameters is only recovered in the event that
+$\sigma$ is completely negligable compared to $x$.  Also note that, provided
+$\alpha > 0$ or $\alpha < -1$, the distribution function for the observed
+parameters is \emph{larger} in magnitude than for the true parameters; the
+observed distribution is a \emph{convolution} of the population and the
+observational uncertainty, which acts like diffusion on the population and
+enhances regions where the second derivative (curvature) is positive\footnote{We
+are ignoring the effects of the truncation here.  These statements will be valid
+provided we are several $\sigma$ away from any boundary in the power law.}.
+
+Though the observed distribution is not a power law, we can compute an approximate, local power-law slope via
+%
+\begin{equation}
+  \aeff \equiv - \diff{}{\log \xobs} \log \diff{N}{\xobs} \simeq \left( \alpha + \alpha \left( \alpha+1 \right) \frac{\sigma^2}{\xobs^2} \right);
+\end{equation}
+%
+again, we only recover the original power law in the limit that $\sigma$ is
+negligable compared to $\xobs$.  For $\alpha > 0$, we will recover an effective
+power-law exponent that is always \emph{steeper} than the truth.  For fixed
+$\sigma$, however, the power law will appear to become shallower as $\xobs$
+increases; alternately, for fixed relative error, $\sigma / \xobs =
+\mathrm{const}$, the effective power law slope observed remains constant (but
+still not equal to $\alpha$).  For a Salpeter power law slope ($\alpha = 2.35$)
+and a 5\% measurement uncertainty, the effective slope is $\aeff = 2.68$;
+alternately, for $\aeff = 2.35$ and the same 5\% measurement uncertainty, we
+have $\alpha = 2.04$.
+
+\newpage
+
+\bibliography{notes}
+
+\end{document}
+
+To be a bit more concrete, suppose we observe the quantity $x$ in each object under consideration  through a process that produces a
+
+\bibliography{notes}
