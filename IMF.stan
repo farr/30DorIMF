@@ -17,7 +17,7 @@ functions {
     return exp(log_lt);
   }
 
-  /* The log of the density of stars in M-age space (MCut < M < infinity and 0 <
+  /* The log of the density of stars in M-age space (M > 0 and 0 <
      age < tmax). */
   real[] log_dPdMdt(real[] M, real[] t, real alpha, real mu, real sigma, real MCut, real tmax) {
     real logdPdMdt[size(M)];
@@ -51,11 +51,11 @@ functions {
      rate is a Gaussian.  The remaining integral over M must be done
      numerically.  This is the integrand:
 
-     dI/dM = 1/MCut (M/MCut)^alpha <normal CDFs for age> PDet(M)
+     df/dM = (alpha-1)/MCut (M/MCut)^(-alpha) <normal CDFs for age> PDet(M)
 
      where PDet(M) is the probability that a true mass M will produce an
      observed mass greater than MCut.  PDet is therefore just a complimentary
-     CDF of the student_t distribution evaluated at MCut.
+     CDF of the normal distribution for log(M) evaluated at log(MCut).
 */
   real[] dfdM(real M, real[] state, real[] theta, real[] x_r, int[] x_i) {
     real alpha = theta[1];
