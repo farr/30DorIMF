@@ -14,7 +14,14 @@ functions {
       logMAcc = logM*logMAcc; /* logMAcc = logM^i */
     }
 
-    return exp(log_lt);
+    return 1.1*exp(log_lt);
+  }
+
+  /* Lifetime used by Schneider+ 2018, as communicated by Schneider. */
+  real lifetime_fabian(real M) {
+    real x = log10(M);
+
+    return 1.1*10^((((0.0704678215679923*x - 0.703265121302702)*x + 2.83657884428275)*x - 5.55038963196851)*x + 4.67513260277302);
   }
 
   /* The log of the density of stars in M-age space (M > 0 and 0 <
@@ -63,6 +70,7 @@ functions {
     real sigma = theta[3];
 
     int nltc = x_i[1];
+    int schneider_flag = x_i[2];
 
     real ltc[nltc];
     real lt;
@@ -81,7 +89,11 @@ functions {
       ltc[i] = x_r[3+i];
     }
 
-    lt = lifetime(M, ltc);
+    if (schneider_flag == 1) {
+      lt = lifetime_fabian(M);
+    } else {
+      lt = lifetime(M, ltc);
+    }
 
     It = (normal_cdf(lt, mu, sigma) - normal_cdf(0.0, mu, sigma))/(normal_cdf(tmax, mu, sigma) - normal_cdf(0.0, mu, sigma));
     Pdet = 1.0 - normal_cdf(log(MCut), log(M), sigma_logM_typ);
@@ -95,6 +107,7 @@ functions {
 data {
   int nltc; /* Number of lifetime fit coefficients. */
   real ltc[nltc]; /* Fit coefficients for stellar lifetime versus mass. */
+  int schneider_flag; /* Set to 1 if you want to use Schneider+ lifetime. */
 
   real MMin; /* Minimum physical mass. */
   real MCut; /* Cut on observed mass for selection. */
@@ -111,7 +124,7 @@ data {
 
 transformed data {
   real x_r[3 + nltc];
-  int x_i[1];
+  int x_i[2];
   real Mintegrate_max[1];
 
   Mintegrate_max[1] = 1000.0; /* This is probably the largest mass we
@@ -119,6 +132,7 @@ transformed data {
 				 just integrate up to here. */
 
   x_i[1] = nltc;
+  x_i[2] = schneider_flag;
 
   x_r[1] = MCut;
   x_r[2] = tmax;
@@ -150,7 +164,13 @@ transformed parameters {
     /* Jacobian for age.  Because the sampling variable is f =
        age/lifetime, we need to multiply if d(age)/df = 1/(df/d(age))
        = lifetime  (or dt for the smaller masses). */
-    real lt = lifetime(Mtrue[i], ltc);
+    real lt;
+
+    if (schneider_flag == 1) {
+      lt = lifetime_fabian(Mtrue[i]);
+    } else {
+      lt = lifetime(Mtrue[i], ltc);
+    }
     agetrue[i] = fttrue[i]*lt;
 
     agelogJfactors[i] = log(lt);
