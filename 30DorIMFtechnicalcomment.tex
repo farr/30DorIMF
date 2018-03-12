@@ -31,8 +31,10 @@
 \newcommand{\ilya}[1]{\textcolor{red}{#1}}
 
 \newcommand{\onesigrange}[3]{\ensuremath{#1^{+#2}_{-#3}}}
-\newcommand{\alpharange}{\onesigrange{2.27}{0.17}{0.15}}
-\newcommand{\alpharangeHM}{\onesigrange{2.55}{0.23}{0.21}}
+\newcommand{\alpharangeone}{\onesigrange{2.05}{0.14}{0.12}}
+\newcommand{\alpharangetwo}{\onesigrange{2.13}{0.13}{0.13}}
+\newcommand{\alpharangethree}{\onesigrange{2.22}{0.17}{0.16}}
+\newcommand{\alpharangefour}{\onesigrange{2.68}{0.23}{0.21}}
 
 \begin{document}
 
@@ -43,27 +45,26 @@
 \email{wmfarr@star.sr.bham.ac.uk, imandel@star.sr.bham.ac.uk}
 
 \begin{abstract}
-Schneider et al.~(Reports, 5 January 2018, p.~69) found more massive stars in the 30 Doradus star-forming region above 30 solar masses than predicted by a standard Salpeter initial mass function (IMF).  Their finding of an IMF power-law exponent of $1.90^{+0.37}_{-0.26}$ is based on a flawed statistical analysis of the data.  We re-analyze their data with appropriate statistical tools to find an IMF exponent of $\alpharange$, consistent with the Salpeter value of $2.35$.
+Schneider et al.~(Reports, 5 January 2018, p.~69) found more stars above 30 solar masses than predicted by a standard Salpeter initial mass function (IMF) in the 30 Doradus star-forming region.  Their finding of an IMF power-law exponent of $1.90^{+0.37}_{-0.26}$ is based on a flawed statistical analysis of the data and a number of uncertain assumptions.  We discuss the uncertainties and re-analyze their data to find a preferred IMF exponent of $\alpharangethree$, consistent with the Salpeter value of $2.35$.
 \end{abstract}
 
 \maketitle
 
-The universality of the initial mass function of stars is a hot topic in modern astrophysics, with impact on galactic evolution, supernovae, and gravitational-wave sources \citep{Kroupa:2002,Bastian:2010}.    \citet{Schneider:2018} use spectroscopic observations of young massive stars in the 30 Doradus region of the Large Magellanic Cloud to infer a shallower-than-expected IMF.  Their conclusion is due to a faulty statistical methodology.
+The universality of the initial mass function of stars is a hot topic in modern astrophysics, with impact on galactic evolution, supernovae, and gravitational-wave sources \citep{Kroupa:2002,Bastian:2010,deMinkBelczynski:2015}.    \citet{Schneider:2018} use spectroscopic observations of young massive stars in the 30 Doradus region of the Large Magellanic Cloud to infer a shallower-than-expected IMF.  Their conclusion is due to a faulty statistical methodology.
 
-\citet{Schneider:2018} obtain estimates of the ages and masses of individual stars with the BONNSAI Bayesian code \citep{Schneider:2017}.  They then obtain an overall mass distribution by effectively adding together the posterior probability density functions of individual stars.  There is no statistical meaning to a distribution obtained in this way, and it does not represent the posterior probability density function on the underlying mass distribution.  In fact, when the underlying distribution is a steeply decaying power law, as considered here, the approach of \citet{Schneider:2018} will yield a distribution biased toward the high-mass end.  The measurement uncertainty will ``smear out'' the masses of both low-mass and high-mass stars, but because there are far more low-mass stars than high-mass ones, this appears to yield more mass at the high end of the distribution, leading to a false conclusion of a shallower distribution.
+\citet{Schneider:2018} obtain estimates of the ages and masses of individual stars with the BONNSAI Bayesian code \citep{Schneider:2017}.  They then obtain an overall mass distribution by effectively adding together the posterior probability density functions of individual stars.  There is no statistical meaning to a distribution obtained in this way, and it does not represent the posterior probability density function on the underlying mass distribution.  %In fact, when the underlying distribution is a steeply decaying power law, as considered here, the approach of \citet{Schneider:2018} will yield a distribution biased toward the high-mass end.  The measurement uncertainty will ``smear out'' the masses of both low-mass and high-mass stars, but because there are far more low-mass stars than high-mass ones, this appears to yield more mass at the high end of the distribution, leading to a false conclusion of a shallower distribution.
 
 Hierarchical Bayesian inference provides the statistically correct solution to
 this problem \citep{Hogg:2010}.  \citet{Mandel:2010stat} specifically considered
 inference on a mass distribution given a sample of uncertain measurements, and
-we use this methodology here.  We follow \citet{Schneider:2018} in assuming that
-their data set is complete above 15 solar masses.  We interpret their inference
+we use this methodology here.  We interpret their inference
 on individual masses and ages as independent Student T distributions for the log
 of the mass and the age, with parameters fixed by matching the T location
 parameter to the peak and the T scale parameter to the 68\% width of the
 individual stellar distributions to the \citet{Schneider:2018} data.  We have
 verified that the inference is robust to the number of degrees of freedom
-assumed for the T distribution (see Figure \ref{fig:IMF}), suggesting that heavy
-tails in the likelihood do not have a strong effect on the inference. We model
+assumed for the T distribution, suggesting that heavy
+tails in the likelihood do not have a strong effect on the inference.  We model
 the star formation history as a truncated Gaussian distribution.  We impose
 broad priors on the power--law exponent and the mean and standard deviation of the
 star formation Gaussian.    We use the Hamiltonian Monte Carlo sampler STAN
@@ -71,10 +72,19 @@ star formation Gaussian.    We use the Hamiltonian Monte Carlo sampler STAN
 with free parameters for each star's actual mass and birth age in addition to
 the IMF exponent and the mean and standard deviation of the star formation history.
 
-Figure \ref{fig:IMF} shows the inferred power-law exponent of the IMF.  We find
-an exponent of $\alpharange$ where the quoted value corresponds to the median of
+Figure \ref{fig:IMF} shows the inferred power-law exponent of the IMF.   When using the full data set of \citet{Schneider:2018}, following their assumption that their data set is complete above 15 solar masses, and using their fit to stellar lifetimes, we find an exponent of $\alpharange$ where the quoted value corresponds to the median of
 the posterior distribution and the range to the 16th and 84th percentiles (i.e.\
-the symmetric 68\% credible interval).  The conclusion is somewhat sensitive to
+the symmetric 68\% credible interval).  
+
+However, the fit to stellar lifetimes used by \citet{Schneider:2018} continues to decrease at high masses, in contrast to the expectation that stellar lifetimes should asymptote to a fixed minimum duration for high-mass stars set by the ratio of the energy to be released through nuclear fusion to the Eddington luminosity.  We make an independent fit to the lifetimes $\tau{M}$ of non-rotating massive stars as modeled by \citet{Brott:2011}:
+\begin{equation}
+\log (\tau (M) /\textrm{yr}) = X + XX \log{(M/M_\odot)} + XXX (\log{(M/M_\odot)})^2 + XXXX (\log{(M/M_\odot)})^3.
+\end{equation}
+%X should already include + log 1.1
+
+of asymptoting to 
+
+The conclusion is somewhat sensitive to
 the choice of the cutoff mass for survey completeness, with an exponent of
 $\alpharangeHM$ for a cutoff at $20 M_\odot$ rather than $15 M_\odot$ (not
 shown).  However, these fluctuations are within the expected statistical
@@ -106,7 +116,7 @@ be consistent with our IMF model.
 \end{figure}
 
 
-In conclusion, we find that there is no evidence for a deviation from the Salpeter IMF in the observations of young massive stars in 30 Doradus once the correct statistical analysis is applied.
+In conclusion, we find that there is no evidence for a deviation from the Salpeter IMF \citep{Salpeter:1955} in the observations of young massive stars in 30 Doradus once the correct statistical analysis is applied.
 
 \acknowledgments
 
