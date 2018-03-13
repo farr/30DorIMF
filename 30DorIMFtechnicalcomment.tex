@@ -77,13 +77,13 @@ using the full data set of \citet{Schneider:2018}, following their assumption
 that their data set is complete above 15 solar masses, and using their fit to
 stellar lifetimes, we find an exponent of $\alpharangeone$ where the quoted
 value corresponds to the median of the posterior distribution and the range to
-the 16th and 84th percentiles (i.e.\ the symmetric 68\% credible interval).   A
-correction of the erroneous statistical procedure used by \citet{Schneider:2018}
+the 16th and 84th percentiles (i.e.\ the symmetric 68\% credible interval).  
+Correcting the erroneous statistical procedure used by \citet{Schneider:2018}
 steepens the preferred IMF slope and narrows the uncertainty interval; the
 preferred value from \citet{Schneider:2018} lies about $1\, \sigma$ below our
 median value.
 
-The analysis above used the same assumptions as \citet{Schneider:2018}.  Below, we consider the impact of three additional questionable assumptions: the stellar lifetime fit; the choice of the completeness limit; and the inclusion of stars for which limited information is available in the models.
+The analysis above used the same assumptions as \citet{Schneider:2018}.  Below, we consider the impact of three additional questionable assumptions: the stellar lifetime fit; the choice of the completeness limit; and the inclusion of stars for which limited measurements are available.
 
 The fit to stellar lifetimes used by \citet{Schneider:2018} continues to
 decrease at high masses, in contrast to the expectation that stellar lifetimes
@@ -103,7 +103,7 @@ Our fit predicts longer lifetimes for stars more massive than $\sim 100 M_\odot$
 than the \citet{Schneider:2018} fit.  Using our fit rather than the
 \citet{Schneider:2018} fit therefore leads to a steeper power-law exponent,
 $\alpharangetwo$, as there are fewer massive stars that should have already
-collapsed and become invisible remnants in our model.
+collapsed into invisible remnants in our model.
 
 The inferred power-law exponent is somewhat sensitive to
 the choice of the cutoff mass for survey completeness.  The data of \citet{Schneider:2018} show a relative scarcity of stars between 15 and 20 solar masses; changing the mass cutoff from $15 M_\odot$ to $20 M_\odot$ further steepens the inferred exponent to $\alpharangethree$.    However, these fluctuations are within the expected statistical
@@ -114,8 +114,8 @@ the survey is complete for $M \geq 15 \, \MSun$.
 Finally, we note that $13$ stars in the \citet{Schneider:2018} data set are
 missing one or both $\log g$ and $T_\textrm{eff}$ measurements.  We
 conservatively remove these stars from the analysis, as their mass and age
-estimates may be particularly uncertain.  Inference of the reduced data set
-yields an even lower estimate of the power-law exponent $\alpharangethree$ as
+estimates may be particularly uncertain.  Inference on this reduced data set
+yields an even lower estimate of the power-law exponent $\alpharangefour$ as
 the removed stars have high estimated masses.
 
 \begin{figure}
@@ -146,7 +146,7 @@ In conclusion, we find that there is no significant evidence for a deviation fro
 
 %While this note is critical of the conclusions in \citet{Schneider:2018}, those authors should be
 We are grateful to \citet{Schneider:2018} for making the data on which their conclusions are
-based available for further study and analysis, and to Fabian Schneider personally for very useful discussions.  This analysis made use of \texttt{PySTAN} \citep{PySTAN}, \texttt{astropy} \citep{astropy}, \texttt{numpy} \citep{numpy}, \texttt{scipy} \citep{scipy}, \texttt{matplotlib} \citep{matplotlib}, and \texttt{seaborn} \citep{seaborn} Python libraries.  The code and \LaTeX source used to prepare this document are publicly available under an open-source MIT license at \url{https://github.com/farr/30DorIMF}.  WF and IM are partially supported by STFC.
+based available for further study and analysis, and to Fabian Schneider personally for very useful discussions.  This analysis made use of \texttt{PySTAN} \citep{PySTAN}, \texttt{astropy} \citep{astropy}, \texttt{numpy} \citep{numpy}, \texttt{scipy} \citep{scipy}, \texttt{matplotlib} \citep{matplotlib}, and \texttt{seaborn} \citep{seaborn} Python libraries.  The code and \LaTeX source used to prepare this document are publicly available under an open-source MIT license at \url{https://github.com/farr/30DorIMF}.  WMF and IM are partially supported by STFC.
 
 \bibliographystyle{hapj}
 \bibliography{Mandel}
