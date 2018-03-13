@@ -45,7 +45,8 @@
 \email{wmfarr@star.sr.bham.ac.uk, imandel@star.sr.bham.ac.uk}
 
 \begin{abstract}
-Schneider et al.~(Reports, 5 January 2018, p.~69) found more stars above 30 solar masses than predicted by a standard Salpeter initial mass function (IMF) in the 30 Doradus star-forming region.  Their finding of an IMF power-law exponent of $1.90^{+0.37}_{-0.26}$ is based on a flawed statistical analysis of the data and a number of uncertain assumptions.  We discuss the uncertainties and re-analyze their data to find a preferred IMF exponent of $\alpharangethree$, consistent with the Salpeter value of $2.35$.  We also discuss a number of modelling choices that can shift the exponent to steeper or shallower values.
+Schneider et al.~(Reports, 5 January 2018, p.~69) found more stars above 30 solar masses than predicted by a standard Salpeter initial mass function (IMF) in the 30 Doradus star-forming region.  Their finding of an IMF power-law exponent of $1.90^{+0.37}_{-0.26}$ is based on a flawed statistical analysis of the data; correcting this error we infer an exponent of $\alpharangeone$.  We discuss the impact of assumptions regarding stellar lifetimes, data set completeness, and data set selection, which can change shift the inferred exponent over a range from $\alpharangetwo$ to $\alpharangefour$.  Our 
+preferred set of assumptions yields an IMF power-law exponent of  $\alpharangethree$, consistent with the Salpeter value of $2.35$.  %We also discuss a number of modelling choices that can shift the exponent to steeper or shallower values.
 \end{abstract}
 
 \maketitle
@@ -91,12 +92,12 @@ should asymptote to a fixed minimum duration for high-mass stars set by the
 ratio of the energy to be released through nuclear fusion to the Eddington
 luminosity.  We make an independent fit to the main sequence lifetimes
 $\tau_{MS}$ of non-rotating massive stars as modelled by \citet{Brott:2011} (in
-our fits, following \citet{Schneider:2018}, we increase the ``observable''
+our models, following \citet{Schneider:2018}, we increase the ``observable''
 lifetime of a star by 10\% beyond its main sequence lifetime to account for
 helium burning):
 %
 \begin{multline}
-\ln \frac{\tau_{MS} (M)}{\textrm{Myr}} = 9.604 - 4.196 \log\frac{M}{M_\odot} \\ + 0.671 \left(\log\frac{M}{M_\odot} \right)^2 - 0.036 \left(\log\frac{M}{M_\odot}\right)^3.
+\ln \frac{\tau_{MS} (M)}{\textrm{Myr}} = 9.604 - 4.196 \ln\frac{M}{M_\odot} \\ + 0.671 \left(\ln\frac{M}{M_\odot} \right)^2 - 0.036 \left(\ln\frac{M}{M_\odot}\right)^3.
 \end{multline}
 %
 Our fit predicts longer lifetimes for stars more massive than $\sim 100 M_\odot$
