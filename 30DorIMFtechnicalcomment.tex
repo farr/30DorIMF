@@ -50,19 +50,21 @@ Schneider et al.~(Reports, 5 January 2018, p.~69) found more stars above 30 sola
 
 \maketitle
 
-The universality of the initial mass function of stars is a hot topic in modern astrophysics, with impact on galactic evolution, supernovae, and gravitational-wave sources \citep{Kroupa:2002,Bastian:2010,deMinkBelczynski:2015}.    \citet{Schneider:2018} use spectroscopic observations of young massive stars in the 30 Doradus region of the Large Magellanic Cloud to infer a shallower-than-expected IMF.  Their conclusion is due to a faulty statistical methodology and several questionable assumptions which we discuss below.
+The universality of the initial mass function of stars is a hot topic in modern astrophysics, with impact on galactic evolution, supernovae, and gravitational-wave sources \citep{Kroupa:2002,Bastian:2010,deMinkBelczynski:2015}.    \citet{Schneider:2018} use spectroscopic observations of young massive stars in the 30 Doradus region of the Large Magellanic Cloud to infer a shallower-than-expected IMF.  They estimate the ages and masses of individual stars with the BONNSAI Bayesian code \citep{Schneider:2017}.  They then obtain an overall mass distribution by effectively adding together the posterior probability density functions of individual stars.  There is no statistical meaning to a distribution obtained in this way, and it does not represent the posterior probability density function on the underlying mass distribution.
 
-\citet{Schneider:2018} estimate the ages and masses of individual stars with the BONNSAI Bayesian code \citep{Schneider:2017}.  They then obtain an overall mass distribution by effectively adding together the posterior probability density functions of individual stars.  There is no statistical meaning to a distribution obtained in this way, and it does not represent the posterior probability density function on the underlying mass distribution.  %In fact, when the underlying distribution is a steeply decaying power law, as considered here, the approach of \citet{Schneider:2018} will yield a distribution biased toward the high-mass end.  The measurement uncertainty will ``smear out'' the masses of both low-mass and high-mass stars, but because there are far more low-mass stars than high-mass ones, this appears to yield more mass at the high end of the distribution, leading to a false conclusion of a shallower distribution.
+%Their conclusion is due to a faulty statistical methodology and several questionable assumptions which we discuss below.
+
+%\citet{Schneider:2018} estimate the ages and masses of individual stars with the BONNSAI Bayesian code \citep{Schneider:2017}.  They then obtain an overall mass distribution by effectively adding together the posterior probability density functions of individual stars.  There is no statistical meaning to a distribution obtained in this way, and it does not represent the posterior probability density function on the underlying mass distribution.  %In fact, when the underlying distribution is a steeply decaying power law, as considered here, the approach of \citet{Schneider:2018} will yield a distribution biased toward the high-mass end.  The measurement uncertainty will ``smear out'' the masses of both low-mass and high-mass stars, but because there are far more low-mass stars than high-mass ones, this appears to yield more mass at the high end of the distribution, leading to a false conclusion of a shallower distribution.
 
 Hierarchical Bayesian inference provides the statistically correct solution to
 this problem \citep{Hogg:2010}.  \citet{Mandel:2010stat} specifically considered
 inference on a mass distribution given a sample of uncertain measurements, and
-we use this methodology here.  We interpret their inference
+we use this methodology here.  We interpret the \citet{Schneider:2018} inference
 on individual masses and ages as independent Gaussian likelihoods for the log
 of the mass and the age, with parameters fixed by matching the mean parameter to the peak and the standard deviation parameter to the 68\% width of the
 individual stellar distributions in the \citet{Schneider:2018} data.  We have performed fits similar to those described here using a heavier-tailed, Student T likelihood with few degrees of freedom and find equivalent results, suggesting that heavy tails in the likelihood are not particularly influential in this analysis.
 
-We model the star formation history as a truncated Gaussian distribution, and
+For our fiducial analysis we model the star formation history as a truncated Gaussian distribution, and
 generally find similar star formation history to \citet{Schneider:2018}, with
 the star formation rate peaking in 30 Dor about 4 Mya.  We impose broad priors
 on the power--law exponent and the mean and standard deviation of the star
@@ -73,10 +75,10 @@ the IMF exponent and the mean and standard deviation of the star formation
 history.
 
 Figure \ref{fig:IMF} shows the inferred power-law exponent of the IMF.   When
-using the full data set of \citet{Schneider:2018}, following their assumption
+using the \citet{Schneider:2018}  fit to stellar lifetimes and following the assumption
 that their data set is complete above 15 solar masses (i.e.\ selecting only
 those stars whose observed mass is above $15 \, M_\odot$
-\citep{Loredo:2004,BBH:O1}), and using their fit to stellar lifetimes, we find
+\citep{Loredo:2004,BBH:O1}), we find
 an exponent of $\alpharangeone$ where the quoted value corresponds to the median
 of the posterior distribution and the range to the 16th and 84th percentiles
 (i.e.\ the symmetric 68\% credible interval).  Correcting the erroneous
@@ -84,27 +86,20 @@ statistical procedure used by \citet{Schneider:2018} steepens the preferred IMF
 slope and narrows the uncertainty interval; the preferred value from
 \citet{Schneider:2018} lies about $1\, \sigma$ below our median value.
 
-The analysis above used the same assumptions as \citet{Schneider:2018}.  Below, we consider the impact of three additional questionable assumptions: the stellar lifetime fit; the choice of the completeness limit; and the inclusion of stars for which limited measurements are available.
+The analysis above used the same assumptions as \citet{Schneider:2018}.  Below, we consider the impact of three additional questionable assumptions: the stellar lifetime fit; the choice of the completeness limit; and the model for the star formation history.
 
-The fit to stellar lifetimes used by \citet{Schneider:2018} continues to
-decrease at high masses, in contrast to the expectation that stellar lifetimes
-should asymptote to a fixed minimum duration for high-mass stars set by the
-ratio of the energy to be released through nuclear fusion to the Eddington
-luminosity.  We make an independent fit to the main sequence lifetimes
-$\tau_{MS}$ of non-rotating massive stars as modelled by \citet{Brott:2011} (in
+%The fit to stellar lifetimes used by \citet{Schneider:2018} continues to decrease at high masses, in contrast to the expectation that stellar lifetimes should asymptote to a fixed minimum duration for high-mass stars set by the ratio of the energy to be released through nuclear fusion to the Eddington luminosity.  
+We make an independent fit to the main sequence lifetimes
+$\tau_{MS}$ of non-rotating massive stars as modelled by \citet{Brott:2011} and \citet{Kohler:2015} (in
 our models, following \citet{Schneider:2018}, we increase the ``observable''
 lifetime of a star by 10\% beyond its main sequence lifetime to account for
 helium burning):
 %
 \begin{multline}
-\ln \frac{\tau_{MS} (M)}{\textrm{Myr}} = 9.604 - 4.196 \ln\frac{M}{M_\odot} \\ + 0.671 \left(\ln\frac{M}{M_\odot} \right)^2 - 0.036 \left(\ln\frac{M}{M_\odot}\right)^3.
+\ln \frac{\tau_{MS} (M)}{\textrm{Myr}} = 9.1973 - 3.8955 \ln\frac{M}{M_\odot} \\ + 0.6107 \left(\ln\frac{M}{M_\odot} \right)^2 - 0.0332 \left(\ln\frac{M}{M_\odot}\right)^3.
 \end{multline}
-%
-Our fit predicts longer lifetimes for stars more massive than $\sim 100 M_\odot$
-than the \citet{Schneider:2018} fit.  Using our fit rather than the
-\citet{Schneider:2018} fit therefore leads to a steeper power-law exponent,
-$\alpharangetwo$, as there are fewer massive stars that should have already
-collapsed into invisible remnants in our model.
+%Our fit predicts longer lifetimes for stars more massive than $\sim 100 M_\odot$ than the \citet{Schneider:2018} fit.  Using our fit rather than the \citet{Schneider:2018} fit therefore leads to a steeper power-law exponent, $\alpharangetwo$, as there are fewer massive stars that should have already collapsed into invisible remnants in our model.
+We find that this alternative fit does not impact the inferred IMF, yielding a power-law exponent $\alpharangetwo$.
 
 The inferred power-law exponent is somewhat sensitive to
 the choice of the cutoff mass for survey completeness.  The data of \citet{Schneider:2018} show a relative scarcity of stars between 15 and 20 solar masses; changing the mass cutoff from $15 M_\odot$ to $20 M_\odot$ further steepens the inferred exponent to $\alpharangethree$.    However, these fluctuations are within the expected statistical
@@ -112,17 +107,14 @@ variation based on the sample size, as confirmed with posterior predictive
 checking.  In particular, we do not claim statistical evidence against the claim of \citet{Schneider:2018} that
 the survey is complete for $M \geq 15 \, \MSun$.
 
-Finally, we note that $13$ stars in the \citet{Schneider:2018} data set are
-missing one or both $\log g$ and $T_\textrm{eff}$ measurements.  We
-conservatively remove these stars from the analysis, as their mass and age
-estimates may be particularly uncertain.  Inference on this reduced data set
-yields an even lower estimate of the power-law exponent $\alpharangefour$ as
-the removed stars have high estimated masses.
+Finally, we consider an alternative star formation history model: a double exponential, with three free parameters: the time of the peak of the star formation rate and the (possibly different) decay constants before and after the peak.  This model allows for a sharper peak and longer tails than a Gaussian.  This star formation rate history model is consistent with the data, as tested with posterior predictive checking (see below).  However, it yields a power-law exponent $\alpharangefour$, almost  $1\, \sigma$ steeper than for our fiducial analysis.  This indicates that the inferred IMF is sensitive to the systematics of the assumed model.  
 
 \begin{figure}
 \includegraphics[width=\columnwidth]{alpha.pdf}
-    		\caption{The posterior inferred on the power-law exponent under four models (see text for details): \citet{Schneider:2018} stellar lifetimes, survey completeness for $M \geq 15 \, \MSun$, and full \citet{Schneider:2018} data set (blue); as before, but with our lifetime fit (green); as before, but with completeness for $M \geq 20 \, \MSun$ (orange); as before, but with stars without $\log g$ and $T_\textrm{eff}$ measurements removed (pink).  The Salpeter power-law exponent is $-\alpha=-2.35$ \citep{Salpeter:1955}, indicated by a black line.  The 68.3\% range of power-law exponents derived by \citet{Schneider:2018} is shaded in grey. }\label{fig:IMF}
+    		\caption{The posterior inferred on the power-law exponent under four models (see text for details): \citet{Schneider:2018} stellar lifetimes, survey completeness for $M \geq 15 \, \MSun$, and Gaussian star formation history model (blue); as before, but with our lifetime fit (green); as before, but with completeness for $M \geq 20 \, \MSun$ (orange); as blue, but with a double-exponential star formation history model (pink).  The Salpeter power-law exponent is $-\alpha=-2.35$ \citep{Salpeter:1955}, indicated by a black line.  The 68.3\% range of power-law exponents derived by \citet{Schneider:2018} is shaded in grey. }\label{fig:IMF}
 \end{figure}
+
+We also considered the possibility that the IMF power law has an extra break at higher masses, allowing for three free parameters: the mass at which the break happens and the exponent below and above the break.  However, we find that the data are insufficient to constrain the parameters of this more general model, and there is no preference for a broken power-law model. 
 
 We confirm the stability of our conclusions with posterior predictive checking.
 Figure \ref{fig:PPC} shows the distribution of observed masses and ages (i.e.,
@@ -141,8 +133,9 @@ be consistent with our IMF model.  We have also confirmed that all of our models
 \end{figure}
 
 
-In conclusion, we find that there is no significant evidence for a deviation from the \citet{Salpeter:1955} IMF  in the observations of young massive stars in 30 Doradus once the correct statistical analysis is applied and uncertainties in stellar lifetimes and selection biases are accounted for.  In addition to these uncertainties, there are several others that we have not specifically considered here.   We chose a particular model for the star formation history and fit its parameters; while posterior predictive checking confirms that our model is able to explain the data, it is possible that a different star formation history model could match the data just as well but shift the inferred IMF power-law exponent.  Furthermore, we adopted the mass and age posteriors for individual stars directly from \citet{Schneider:2018}.  Although we do not discuss the possible systematic uncertainty on these due to imperfect stellar models or the inclusion of other complicating factors described by \citet{Schneider:2018} (rotation, mass transfer, mergers, etc.), any systematics could again shift the inferred IMF exponent.  
+We find that we can significantly reduce the statistical uncertainty in the IMF by applying the correct statistical analysis to the observations of young massive stars in 30 Doradus.  However, the systematics from modelling uncertainties, such as the assumed star formation history model, can potentially shift the inferred power-law exponent by more than the statistical uncertainty.   Furthermore, we adopted the mass and age posteriors for individual stars directly from \citet{Schneider:2018}.  Although we do not discuss the possible systematic uncertainty on these due to imperfect stellar models or the inclusion of other complicating factors described by \citet{Schneider:2018} (rotation, mass transfer, mergers, etc.), any systematics could again shift the inferred IMF exponent.  
 The combination of these factors makes it very challenging to infer the precise shape of the IMF even when a data set as good as that obtained by is \citet{Schneider:2018} available.
+
 
 \acknowledgments
 
