@@ -31,10 +31,10 @@
 \newcommand{\ilya}[1]{\textcolor{red}{#1}}
 
 \newcommand{\onesigrange}[3]{\ensuremath{#1^{+#2}_{-#3}}}
-\newcommand{\alpharangeone}{\onesigrange{2.05}{0.14}{0.12}}
-\newcommand{\alpharangetwo}{\onesigrange{2.13}{0.13}{0.13}}
-\newcommand{\alpharangethree}{\onesigrange{2.22}{0.17}{0.16}}
-\newcommand{\alpharangefour}{\onesigrange{2.68}{0.23}{0.21}}
+\newcommand{\alpharangeone}{\onesigrange{2.05}{0.14}{0.13}}
+\newcommand{\alpharangetwo}{\onesigrange{2.05}{0.14}{0.13}}
+\newcommand{\alpharangethree}{\onesigrange{2.11}{0.19}{0.17}}
+\newcommand{\alpharangefour}{\onesigrange{2.15}{0.13}{0.13}}
 
 \begin{document}
 
@@ -45,15 +45,14 @@
 \email{wmfarr@star.sr.bham.ac.uk, imandel@star.sr.bham.ac.uk}
 
 \begin{abstract}
-Schneider et al.~(Reports, 5 January 2018, p.~69) found more stars above 30 solar masses than predicted by a standard Salpeter initial mass function (IMF) in the 30 Doradus star-forming region.  Their finding of an IMF power-law exponent of $1.90^{+0.37}_{-0.26}$ is based on a flawed statistical analysis of the data; correcting this error we infer an exponent of $\alpharangeone$.  We discuss the impact of assumptions regarding stellar lifetimes, data set completeness, and data set selection, which can shift the inferred exponent over a range from $\alpharangetwo$ to $\alpharangefour$.  Our
-preferred set of assumptions yields an IMF power-law exponent of  $\alpharangethree$, consistent with the Salpeter value of $2.35$.
+Schneider et al.~(Reports, 5 January 2018, p.~69) found more stars above 30 solar masses than predicted by a standard Salpeter initial mass function (IMF) in the 30 Doradus star-forming region.  They find IMF power-law exponent of $1.90^{+0.37}_{-0.26}$; however, the significant statistical uncertainty in their result is based on a flawed analysis of the data. Correcting this error we infer an exponent of $\alpharangeone$.  Although the mean of our posterior on the exponent suggests a steeper IMF, it is in fact more statistically significantly different (about 2-$\sigma$) from the Salpeter value of $2.35$.  We discuss the impact of assumptions regarding data set completeness and the star formation history model; alternative assumptions can shift the inferred exponent to $\alpharangethree$ and $\alpharangefour$, respectively.  We also consider an additional break in the IMF power law, but do not find convincing evidence for such a break.
 \end{abstract}
 
 \maketitle
 
 The universality of the initial mass function of stars is a hot topic in modern astrophysics, with impact on galactic evolution, supernovae, and gravitational-wave sources \citep{Kroupa:2002,Bastian:2010,deMinkBelczynski:2015}.    \citet{Schneider:2018} use spectroscopic observations of young massive stars in the 30 Doradus region of the Large Magellanic Cloud to infer a shallower-than-expected IMF.  Their conclusion is due to a faulty statistical methodology and several questionable assumptions which we discuss below.
 
-\citet{Schneider:2018} obtain estimates of the ages and masses of individual stars with the BONNSAI Bayesian code \citep{Schneider:2017}.  They then obtain an overall mass distribution by effectively adding together the posterior probability density functions of individual stars.  There is no statistical meaning to a distribution obtained in this way, and it does not represent the posterior probability density function on the underlying mass distribution.  %In fact, when the underlying distribution is a steeply decaying power law, as considered here, the approach of \citet{Schneider:2018} will yield a distribution biased toward the high-mass end.  The measurement uncertainty will ``smear out'' the masses of both low-mass and high-mass stars, but because there are far more low-mass stars than high-mass ones, this appears to yield more mass at the high end of the distribution, leading to a false conclusion of a shallower distribution.
+\citet{Schneider:2018} estimate the ages and masses of individual stars with the BONNSAI Bayesian code \citep{Schneider:2017}.  They then obtain an overall mass distribution by effectively adding together the posterior probability density functions of individual stars.  There is no statistical meaning to a distribution obtained in this way, and it does not represent the posterior probability density function on the underlying mass distribution.  %In fact, when the underlying distribution is a steeply decaying power law, as considered here, the approach of \citet{Schneider:2018} will yield a distribution biased toward the high-mass end.  The measurement uncertainty will ``smear out'' the masses of both low-mass and high-mass stars, but because there are far more low-mass stars than high-mass ones, this appears to yield more mass at the high end of the distribution, leading to a false conclusion of a shallower distribution.
 
 Hierarchical Bayesian inference provides the statistically correct solution to
 this problem \citep{Hogg:2010}.  \citet{Mandel:2010stat} specifically considered
