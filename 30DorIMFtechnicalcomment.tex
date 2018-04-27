@@ -101,7 +101,7 @@
 %
 %Schneider et al.~(Reports, 5 January 2018, p.~69) found more stars above 30 solar masses than predicted by a standard Salpeter initial mass function (IMF) in the 30 Doradus star-forming region.  They find an IMF power-law exponent of $1.90^{+0.37}_{-0.26}$ in contrast to the Salpeter exponent of $2.35$; however, the significant statistical uncertainty in their result is based on a flawed analysis of the data. Correcting this error we infer an exponent of $\alpharangeone$.  Although the mean of our posterior on the exponent suggests a steeper IMF, it is in fact more statistically significantly different (about 2-$\sigma$) from the Salpeter value.  We discuss the impact of assumptions regarding data set completeness and the star formation history model; alternative assumptions can shift the inferred exponent to $\alpharangethree$ and $\alpharangefour$, respectively.  We also consider an additional break in the IMF power law, but do not find convincing evidence for such a break.
 %
-Schneider et al.~(Reports, 5 January 2018, p.~69) used a statistically flawed method in their calculations of the stellar initial mass function. Adopting an improved approach, we reanalyse their data and determine a power law exponent of $\alpharangeone$. Alternative assumptions regarding data set completeness and the star formation history model can shift the inferred exponent to $\alpharangethree$ and $\alpharangefour$, respectively.
+Schneider et al.~(Reports, 5 January 2018, p.~69) used an ad hoc statistical method in their calculation of the stellar initial mass function. Adopting an improved approach, we reanalyse their data and determine a power law exponent of $\alpharangeone$. Alternative assumptions regarding data set completeness and the star formation history model can shift the inferred exponent to $\alpharangethree$ and $\alpharangefour$, respectively.
 %Although our mean value is higher than Schneider et al's, it is more significantly different from the standard Salpeter value of 2.35.
 \end{sciabstract}
 
@@ -140,7 +140,7 @@ with free parameters for each star's actual mass and birth age in addition to
 the IMF exponent and the mean and standard deviation of the star formation
 history.
 
-Figure \ref{fig:IMF} shows the inferred power-law exponent of the IMF.   We use the Schneider et al.\cite{Schneider:2018}  fit to stellar lifetimes and assume
+Figure \ref{fig:IMF} shows the inferred power-law exponent of the IMF.   We use the Schneider et al.\cite{Schneider:2018} fit to stellar lifetimes and assume
 that their data set is complete above 15 solar masses (i.e.\ selecting only
 those stars whose observed mass is above $15 \, M_\odot$
 \cite{Loredo:2004,BBH:O1}).  We find
@@ -150,7 +150,7 @@ of the posterior distribution and the range to the 16th and 84th percentiles
 %statistical procedure used by Schneider et al.\cite{Schneider:2018} 
 Hierarchical Bayesian modelling steepens the preferred IMF
 slope; our median $\alpha$ value lies about $1\, \sigma$ above the preferred value from
-Schneider et al.\cite{Schneider:2018} lies about  below our median value.  More significantly, it narrows the uncertainty interval by more than a factor of 2.
+Schneider et al.\cite{Schneider:2018}.  More significantly, it narrows the uncertainty interval by more than a factor of 2.
 
 The analysis above used the same assumptions as Schneider et al.\cite{Schneider:2018}.  Below, we consider the impact of three additional  assumptions: the stellar lifetime fit; the choice of the completeness limit; and the model for the star formation history.
 
@@ -202,7 +202,8 @@ We find that we can substantially reduce the statistical uncertainty in the IMF 
 The combination of these factors makes it very challenging to infer the precise shape of the IMF even when a data set as good as that obtained by Schneider et al.\cite{Schneider:2018} is available.
 
 
-{\bf Acknowledgments:} We are grateful to Schneider et al.\cite{Schneider:2018} for making the data on which their conclusions are based available for further study and analysis, and to Fabian Schneider personally for very useful discussions.  This analysis made use of \texttt{PySTAN} \cite{PySTAN}, \texttt{astropy} \cite{astropy}, \texttt{numpy} \cite{numpy}, \texttt{scipy} \cite{scipy}, \texttt{matplotlib} \cite{matplotlib}, and \texttt{seaborn} \cite{seaborn} Python libraries.
+{\bf Acknowledgments:} We are grateful to Schneider et al.\cite{Schneider:2018} for making the data on which their conclusions are based available for further study and analysis, and to Fabian Schneider personally for very useful discussions.  This analysis made use of \texttt{PySTAN}, %\cite{PySTAN}, 
+\texttt{astropy} \cite{astropy}, \texttt{numpy} \cite{numpy}, \texttt{scipy} \cite{scipy}, \texttt{matplotlib} \cite{matplotlib}, and \texttt{seaborn} \cite{seaborn} Python libraries.
 {\bf Funding:} WMF and IM are partially supported by STFC.
 
 {\bf Author contributions:} WMF and IM are jointly responsible for all aspects of this work.
