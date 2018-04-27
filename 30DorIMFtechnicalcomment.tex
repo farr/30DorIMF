@@ -140,7 +140,7 @@ the star formation rate in 30 Dor peaking about 4 Myr ago.  We impose broad prio
 on the power--law exponent and the mean and standard deviation of the star
 formation Gaussian.    We use the Hamiltonian Monte Carlo sampler Stan
 \cite{STAN} to efficiently address the high-dimensional hierarchical problem
-with free parameters for each star's actual mass and birth age in addition to
+with free parameters for each star's actual mass and age in addition to
 the IMF exponent and the mean and standard deviation of the star formation
 history.
 
@@ -176,7 +176,7 @@ the choice of the cutoff mass for survey completeness.  The data of Schneider et
 checking.  In particular, there is no statistical evidence against the claim of Schneider et al.\cite{Schneider:2018} that
 the survey is complete for $M \geq 15 \, \MSun$.
 
-Finally, we consider an alternative star formation history model: a double exponential, with three free parameters: the time of the peak of the star formation rate and the (possibly different) decay constants before and after the peak.  This model allows for a sharper peak and longer tails than a Gaussian.  This star formation rate history model is consistent with the data, as tested with posterior predictive checking (see below).  However, it yields a power-law exponent $\alpha=\alpharangefour$, almost  $1\, \sigma$ steeper than for our fiducial analysis.  This indicates that the inferred IMF is sensitive to the systematics of the assumed model.
+Finally, we consider an alternative star formation history model: a double exponential, with three free parameters: the time of the peak of the star formation rate and the (possibly different) decay constants before and after the peak.  This model allows for a sharper peak and longer tails than a Gaussian.  This star formation rate history model is consistent with the data, as tested with posterior predictive checking (see below).  However, it yields a power-law exponent $\alpha=\alpharangefour$, almost  $1\, \sigma$ steeper than for our fiducial analysis.  This indicates that the inferred IMF is sensitive to the systematics of the assumed star formation rate model.
 
 \begin{figure}
 \includegraphics[width=\columnwidth]{alpha.pdf}
@@ -189,7 +189,7 @@ We confirm the stability of our conclusions with posterior predictive checking.
 Figure \ref{fig:PPC} shows the distribution of observed masses and ages (i.e.,
 the peak of the likelihood) from the Schneider et al.\cite{Schneider:2018} data overlain on the
 range of mass and age distributions that would be observed from a large number
-of data sets drawn according to our fitted IMF model.  The data are  consistent with our IMF model.  We have also confirmed that all of our models yield predictions for the numbers of stars heavier than $30 M_\odot$ and $60 M_\odot$ that are consistent with observations.
+of data sets drawn according to our fitted fiducial IMF model.  The data are  consistent with being drawn from our model.  We have also confirmed that all of our models yield predictions for the numbers of stars heavier than $30 M_\odot$ and $60 M_\odot$ that are consistent with observations.
 
 \begin{figure}
 %\vspace{-1in}
