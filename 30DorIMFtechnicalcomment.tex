@@ -11,7 +11,7 @@
 
 % Users of the {thebibliography} environment or BibTeX should use the
 % scicite.sty package, downloadable from *Science* at
-% http://www.sciencemag.org/authors/preparing-manuscripts-using-latex 
+% http://www.sciencemag.org/authors/preparing-manuscripts-using-latex
 % This package should properly format in-text
 % reference calls and reference-list numbers.
 
@@ -34,7 +34,7 @@
 
 \topmargin 0.0cm
 \oddsidemargin 0.2cm
-\textwidth 16cm 
+\textwidth 16cm
 \textheight 21cm
 \footskip 1.0cm
 
@@ -85,7 +85,7 @@
 
 \date{}
 
-\begin{document} 
+\begin{document}
 
 % Double-space the manuscript.
 
@@ -93,7 +93,7 @@
 
 % Make the title.
 
-\maketitle 
+\maketitle
 
 
 
@@ -127,14 +127,14 @@ we use a similar methodology here.  We interpret the Schneider et al.\cite{Schne
 inference on individual masses and ages as independent Gaussian likelihoods for
 the logarithm of the mass and the age, with parameters fixed by matching the mean
 parameter to the peak and the standard deviation parameter to the 68\% width of
-the individual stellar distributions in the Schneider et al.\cite{Schneider:2018} data.  
+the individual stellar distributions in the Schneider et al.\cite{Schneider:2018} data.
 %We have performed fits similar to those described here using a heavier-tailed, Student T likelihood with few degrees of freedom and find equivalent results, suggesting that heavy tails in the likelihood are not particularly influential in this analysis.
 
 For our fiducial analysis we model the star formation history as a truncated Gaussian distribution, and
 generally find similar star formation history to Schneider et al.\cite{Schneider:2018}, with
 the star formation rate in 30 Dor peaking about 4 Myr ago.  We impose broad priors
 on the power--law exponent and the mean and standard deviation of the star
-formation Gaussian.    We use the Hamiltonian Monte Carlo sampler STAN
+formation Gaussian.    We use the Hamiltonian Monte Carlo sampler Stan
 \cite{STAN} to efficiently address the high-dimensional hierarchical problem
 with free parameters for each star's actual mass and birth age in addition to
 the IMF exponent and the mean and standard deviation of the star formation
@@ -147,7 +147,7 @@ those stars whose observed mass is above $15 \, M_\odot$
 an exponent of $\alpha=\alpharangeone$ where the quoted value corresponds to the median
 of the posterior distribution and the range to the 16th and 84th percentiles
 (i.e.\ the symmetric 68\% credible interval).  %Correcting the erroneous
-%statistical procedure used by Schneider et al.\cite{Schneider:2018} 
+%statistical procedure used by Schneider et al.\cite{Schneider:2018}
 Hierarchical Bayesian modelling steepens the preferred IMF
 slope; our median $\alpha$ value lies about $1\, \sigma$ above the preferred value from
 Schneider et al.\cite{Schneider:2018} lies about  below our median value.  More significantly, it narrows the uncertainty interval by more than a factor of 2.
